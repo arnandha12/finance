@@ -18,7 +18,7 @@
     "_pxMenuIndex": [
         2,
         1,
-        0,
+        1,
         0
     ],
     "_skin_": "sc486364a0574bed86d29c8b6864b669",
@@ -51,13 +51,15 @@
     "canUpdateUI": true,
     "canvasWidth": 1200,
     "children": [
-        "flxMain"
+        "HeaderComponentPostLogin",
+        "leftpane",
+        "flxRightPane"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "desktop",
-            "name": "frmLoginController"
+            "name": "frmCreateNewUserController"
         }
     },
     "currentLocale": "default",
@@ -67,8 +69,8 @@
     "device": "desktopweb",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "friendlyName": "frmLogin",
-    "id": "frmLogin",
+    "friendlyName": "frmCreateNewUser",
+    "id": "frmCreateNewUser",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -91,7 +93,7 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "fe66dcbc7f554879a1df672d011cee56",
+    "kuid": "a93adf925ce04807b922b8435c5e2f55",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,

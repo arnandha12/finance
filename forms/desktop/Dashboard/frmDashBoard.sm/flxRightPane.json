@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "89%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "300px"
     },
     "_margin_": [
         0,
@@ -25,39 +25,37 @@
     "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "100px"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "78%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHeader"
+        "imgBg",
+        "lblContent"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "HeaderComponent",
+    "id": "flxRightPane",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "u56dadb9ce3c446c8c246da4774e7848",
+    "kuid": "f7142e90e58246fcac7cebf5b45dd5dc",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
-    "pf": "userwidgetmodel",
+    "parent": "frmDashBoard",
+    "pf": "frmDashBoard",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "vizProps": {
-        "hidewidgethierarchy": false
-    },
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 2
 }

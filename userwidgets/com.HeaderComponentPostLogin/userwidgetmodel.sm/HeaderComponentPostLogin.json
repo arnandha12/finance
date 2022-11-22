@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "100px"
     },
     "_left_": {
         "type": "string",
@@ -40,11 +40,11 @@
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "HeaderComponent",
+    "id": "HeaderComponentPostLogin",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "u56dadb9ce3c446c8c246da4774e7848",
+    "kuid": "dddd07fbc63f489abb2582dbc4a90857",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "userwidgetmodel",
