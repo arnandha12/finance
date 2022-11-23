@@ -46,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "b36a6b9807fa4be7b5e9c4fb9dac84db",
-    "layouttype": 3,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxLeftpane",
     "pf": "userwidgetmodel",
