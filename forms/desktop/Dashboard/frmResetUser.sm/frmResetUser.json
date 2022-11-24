@@ -69,6 +69,7 @@
     "device": "desktopweb",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "friendlyName": "frmResetUser",
     "id": "frmResetUser",
     "info": null,
     "initdone": false,

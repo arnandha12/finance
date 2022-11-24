@@ -19,7 +19,7 @@
         2,
         1,
         1,
-        3
+        4
     ],
     "_skin_": "sc486364a0574bed86d29c8b6864b669",
     "_title_": null,
@@ -69,6 +69,7 @@
     "device": "desktopweb",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "friendlyName": "frmRedeemVoucher",
     "id": "frmRedeemVoucher",
     "info": null,
     "initdone": false,
