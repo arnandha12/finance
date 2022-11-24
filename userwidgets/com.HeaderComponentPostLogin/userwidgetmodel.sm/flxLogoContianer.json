@@ -32,7 +32,7 @@
     },
     "centery": {
         "type": "string",
-        "value": "40px"
+        "value": "50%"
     },
     "children": [
         "Label0cf1016cc307943",

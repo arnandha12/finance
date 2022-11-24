@@ -32,7 +32,7 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "40px"
+        "value": "50%"
     },
     "children": [
         "btnSignup",
