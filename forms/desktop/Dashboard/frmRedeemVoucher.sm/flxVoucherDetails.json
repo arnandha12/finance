@@ -41,8 +41,7 @@
     "children": [
         "flxTopContent",
         "flxVoucherDetailsSection",
-        "flxConfirmationPopup",
-        "flxAcknowledgement"
+        "flxAcknowledgementPopup"
     ],
     "clipbounds": false,
     "containerweight": 100,

@@ -43,10 +43,12 @@
         "value": "50%"
     },
     "children": [
-        "CopylblRetailPater0i097cc13d38442",
-        "CopyflxLine0b7d5e0fdb1454c",
-        "CopylblConfirmation0i3770625022949",
-        "CopyflxButtons0fb2e0cd0938a4f"
+        "lblRetailPortalHeader",
+        "flxLinered",
+        "lblError",
+        "lblVoucherNotFound",
+        "lblInfoMsg",
+        "flxContinueBtn"
     ],
     "clipbounds": false,
     "containerweight": 100,
@@ -54,7 +56,7 @@
     "id": "flxPopupVoucherNotfound",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "a0a4790b7e2d4932a10278323b2693ca",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

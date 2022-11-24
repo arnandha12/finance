@@ -4,7 +4,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "51.82%"
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -18,35 +22,27 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "4.86%"
-    },
     "_skin_": "sa9987a1be0e43e4bef5a1760a4c37db",
-    "_src_": "dropdown2x.png",
+    "_src_": "dropdown3x.png",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "9.80%"
+        "value": "100%"
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "id": "imgDropdown",
-    "imagescalemode": 1,
+    "imagescalemode": 0,
     "info": null,
     "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "a6501cb39a1f4e5e8c0c5ca8902fc032",
     "name": "kony.ui.Image2",
-    "parent": "flxVoucherStatus",
+    "parent": "flxImgDropdown",
     "pf": "frmGenerateVoucherMI",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

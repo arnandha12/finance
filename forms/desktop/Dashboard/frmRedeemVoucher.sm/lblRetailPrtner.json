@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "30px"
+        "value": "70px"
     },
     "_margin_": [
         1,
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "gd9169a11bc342d5bd434a52965864f4",
+    "kuid": "ff9d41d49a94403ab090894c7d6e7baf",
     "name": "kony.ui.Label",
-    "parent": "flxTopContent",
+    "parent": "flxLeft",
     "pf": "frmRedeemVoucher",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

@@ -18,14 +18,14 @@
         0
     ],
     "_skin_": "s5debec91f1e42aa9de46998ef58b32e",
-    "_text_": "User password reset. SMS sent to their registered mobile number.",
+    "_text_": "Voucher number ABC1152212334212 successfully redeemed",
     "_top_": {
         "type": "string",
         "value": "30%"
     },
     "_width_": {
         "type": "string",
-        "value": "75%"
+        "value": "50%"
     },
     "_wrapping_": 2,
     "android": {
@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "heb44c48729b49bb8683b16f193cb693",
     "name": "kony.ui.Label",
-    "parent": "flxAcknowledgement",
+    "parent": "flxAcknowledgementPopup",
     "pf": "frmRedeemVoucher",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

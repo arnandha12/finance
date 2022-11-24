@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "563dp"
+        "value": "70.18%"
     },
     "_left_": {
         "type": "string",
@@ -25,7 +25,7 @@
     "_skin_": "se97139b928d4b419bce57066af72af3",
     "_top_": {
         "type": "string",
-        "value": "246dp"
+        "value": "22%"
     },
     "_width_": {
         "type": "string",
@@ -34,15 +34,12 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "51.05%"
-    },
     "children": [
         "flxLine1",
         "flxLine2",
         "flxLine3",
-        "btnResetUserPassword"
+        "flxLine4",
+        "flxBtnSec"
     ],
     "clipbounds": false,
     "containerweight": 100,

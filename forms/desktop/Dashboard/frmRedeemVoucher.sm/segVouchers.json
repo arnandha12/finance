@@ -5,61 +5,31 @@
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Label1"
             }
         },
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Label2"
             }
         },
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Label3"
             }
         },
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Label4"
             }
         },
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Label5"
             }
         }
     ],
@@ -96,7 +66,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "09",
+    "counter": "04",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -130,7 +100,7 @@
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "e1b3b910a3754050a6e54e0a901afc1e",
-    "rowcounter": 9,
+    "rowcounter": 4,
     "rowfocusskin": "s81bee6c05da4ed2a18adb8f7714d88f",
     "rowskin": "s5e5ae4646444f04813b9d2b631deb42",
     "rowtemplate": "Flex0h569df2eddc746",

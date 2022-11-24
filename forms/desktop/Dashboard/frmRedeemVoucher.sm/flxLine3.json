@@ -25,7 +25,7 @@
     "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
     "_top_": {
         "type": "string",
-        "value": "50dp"
+        "value": "30dp"
     },
     "_width_": {
         "type": "string",
@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxUserId",
-        "flxStatus"
+        "flxMerchnatt24CustId",
+        "flxLoanAmount"
     ],
     "clipbounds": false,
     "containerweight": 100,

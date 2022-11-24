@@ -35,9 +35,11 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblRetailPrtner",
-        "lblUserDetails",
-        "flxClose"
+        "lblVoucherDetails",
+        "lblVoucherID",
+        "flxClose",
+        "flxGenDate",
+        "flxExpDate"
     ],
     "clipbounds": false,
     "containerweight": 100,

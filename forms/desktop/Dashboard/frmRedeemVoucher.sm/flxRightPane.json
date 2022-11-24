@@ -37,7 +37,8 @@
     "children": [
         "imgBg",
         "flxVoucherSearch",
-        "flxVoucherDetails"
+        "flxVoucherDetails",
+        "flxOTPSection"
     ],
     "clipbounds": false,
     "containerweight": 100,

@@ -71,7 +71,14 @@
         11,
         2022
     ],
-    "entereddate": null,
+    "entereddate": [
+        null,
+        null,
+        null,
+        0,
+        0,
+        0
+    ],
     "format": "dd/MM/yyyy",
     "formatteddate": "",
     "hidedaysheader": false,
@@ -115,5 +122,6 @@
         "14.2857%;",
         "14.2857%;",
         "14.2857%;"
-    ]
+    ],
+    "year": null
 }

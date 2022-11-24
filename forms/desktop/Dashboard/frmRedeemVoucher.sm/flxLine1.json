@@ -35,8 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxUsername",
-        "flxRole"
+        "flxApplicantName",
+        "flxPhone"
     ],
     "clipbounds": false,
     "containerweight": 100,

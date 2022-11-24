@@ -29,7 +29,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "1064px"
+        "value": "1066px"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -38,10 +38,10 @@
         "flxTopHeader",
         "flxSearch",
         "flxSegmentSearchList",
-        "flxSegmentVoucherStatus",
         "flxGroupCalender",
         "flxVoucherDetailSection",
-        "flxConfirmationPopup"
+        "flxConfirmationPopup",
+        "flxSegmentVoucherStatus"
     ],
     "clipbounds": false,
     "containerweight": 100,
