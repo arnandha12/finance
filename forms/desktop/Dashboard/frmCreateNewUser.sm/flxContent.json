@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "350px"
+        "value": "30px"
     },
     "_margin_": [
         0,
@@ -25,15 +25,19 @@
     "_skin_": "s74a7ddffc304aad9355acbe9aef0f3d",
     "_top_": {
         "type": "string",
-        "value": "50dp"
+        "value": "50px"
     },
     "_width_": {
         "type": "string",
-        "value": "1064px"
+        "value": "92%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "flxTopContent",
         "flxUserDetails"
