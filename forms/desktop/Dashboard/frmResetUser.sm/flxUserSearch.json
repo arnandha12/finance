@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "300px"
+        "value": "0px"
     },
     "_margin_": [
         0,
@@ -45,7 +45,7 @@
     "id": "flxUserSearch",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "de69bb5a3f94496d9a6ca2fa241536a1",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

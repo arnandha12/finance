@@ -59,7 +59,7 @@
     "controllerInfo": {
         "default": {
             "channel": "desktop",
-            "name": "frmResetUserController"
+            "name": "frmGenerateVoucherMIController"
         }
     },
     "currentLocale": "default",
@@ -69,7 +69,7 @@
     "device": "desktopweb",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "frmResetUser",
+    "id": "frmGenerateVoucherMI",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -92,7 +92,7 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "b3bedf43d96d41b0b4b52a2b20b3337b",
+    "kuid": "b086746480ac477c9130ea433f894135",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,

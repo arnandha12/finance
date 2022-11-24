@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "30px"
+        "value": "0px"
     },
     "_margin_": [
         0,
@@ -22,40 +22,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s74a7ddffc304aad9355acbe9aef0f3d",
+    "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
     "_top_": {
         "type": "string",
-        "value": "50dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "92%"
+        "value": "1064px"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "children": [
-        "flxTopContent",
-        "flxUserDetailsSection",
-        "flxConfirmationPopup",
-        "flxAcknowledgement"
+        "flxTopHeader",
+        "flxSearch",
+        "flxSegmentSearchList",
+        "flxPopupVoucherNotfound"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxUserDetails",
+    "id": "flxVoucherSearch",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "b66ce6bbd4d34a05941b48fe0d395d78",
+    "isvisible": true,
+    "kuid": "bc25fea182f0409283971662aa066deb",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxRightPane",
-    "pf": "frmResetUser",
+    "pf": "frmRedeemVoucher",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
