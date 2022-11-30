@@ -267,7 +267,7 @@
     "defaultZIndex": "1",
     "defaultlocalekey": "",
     "defaulttheme": "defaultTheme",
-    "desktopstartupformkey": "d97569eb7d65476ea8e26fc5c2ad6002",
+    "desktopstartupformkey": "fe66dcbc7f554879a1df672d011cee56",
     "desktopwebaligenmentoption": "left",
     "desktopwebbasefontsize": "16",
     "desktopwebfavico": "",
@@ -324,7 +324,9 @@
     "hybridhttpsportkey": "",
     "hybridportkey": "",
     "ide_appEvents": {
-        "desktop": {}
+        "desktop": {
+            "preappinit": "AS_AppEvents_jb6525bd56bc445f922c6c8831d0ab82"
+        }
     },
     "imagewhendownloading": "",
     "initialRotationPreferenceKey": "landscape",
