@@ -36,6 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "flxpasswordbox",
+        "flxError",
         "flxAction"
     ],
     "clipbounds": false,
@@ -46,7 +47,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "e520e11d97974621ab221043fb34dcc5",
-    "layouttype": 4,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxContainerSection",
     "pf": "frmOtpValidation",

@@ -49,6 +49,7 @@
     "isvisible": true,
     "kuid": "ec8660356b2449a1a246568209f79e60",
     "name": "kony.ui.Button",
+    "noteId": "dfe2-bfb8-dde3-549e-031e-2a0b",
     "parent": "flxRight",
     "pf": "frmLogin",
     "retaincontentalignment": false,
