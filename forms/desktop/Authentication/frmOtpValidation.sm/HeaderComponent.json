@@ -61,51 +61,40 @@
         "Image0ed0f18d8ce2b4b": {
             "__events__": {},
             "__info__": {
-                "kuid": "c36d26aa34ce49d18d02a52d85957772",
-                "srcKUID": "u2721f3013094c16b81db213b0087407",
+                "kuid": "fd1a0c0149954b93b965b3acc85bc75a",
+                "srcKUID": "u28c40da4ec840a6b924835b077692c7",
                 "wType": "Image"
-            },
-            "src": "logo1x.png"
+            }
         },
         "Label0cf1016cc307943": {
             "__events__": {},
             "__info__": {
-                "kuid": "c248ca68d0b04bbeb350e3a78cd13c42",
-                "srcKUID": "ubb5ed86a34349ed857f7d853e7dcde5",
+                "kuid": "bd06e004603c4929b5617f9c2905e977",
+                "srcKUID": "u5864425459b44e289c7ac385f1bded9",
                 "wType": "Label"
             }
         },
         "btnSignup": {
             "__events__": {},
             "__info__": {
-                "kuid": "ac41ae816dea4446aabf78f272d4f47a",
-                "srcKUID": "ucec307c285b4a169bc8faa2c6450c9c",
+                "kuid": "f03c528495d846ebbfebff408f4fd03d",
+                "srcKUID": "ud5f4f8415d845e3a9b9f38de8746e94",
                 "wType": "Button"
             }
         },
         "flxHeader": {
             "__events__": {},
             "__info__": {
-                "kuid": "e744c3e5e76142a7a778de4abed1ee89",
-                "srcKUID": "u8f540362c744405a4642af7fb99294b",
+                "kuid": "c5cc433fb07d468492f642502b636c43",
+                "srcKUID": "ubd39f8950fa4e20b0644f1efef74e27",
                 "wType": "FlexContainer"
-            },
-            "autogrowMode": {
-                "Default": 0
-            },
-            "height": {
-                "Default": {
-                    "type": "string",
-                    "value": "100%"
-                }
-            },
-            "responsiveData": {}
+            }
         },
         "flxLogoContianer": {
             "__events__": {},
             "__info__": {
-                "kuid": "hec5f086e36f426788c83e4d94ac4575",
-                "srcKUID": "u364518e1f424e4b80fc37f8a1140f53",
+                "kuid": "e3e95a9176824d7cac2fad9552dd2aa7",
+                "srcKUID": "u834e1d5a52142ddbb37bcf620351c8b",
                 "wType": "FlexContainer"
             }
         }
