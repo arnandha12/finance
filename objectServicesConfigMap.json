@@ -1,1 +1,9 @@
-{}
+{
+    "RetailerCustomer_Retailer": {
+        "servicename": "RetailerCustomer",
+        "serviceid": "a4ec61c9-951f-4dbf-accd-1df20651549d",
+        "type": "objectsvcs",
+        "objectname": "Retailer",
+        "objectid": "1303"
+    }
+}

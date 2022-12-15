@@ -42,6 +42,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxCreateNewUser",
+    "ide_onTouchStart": "AS_FlexContainer_e586819534ae4fb2828bd54e08f8ebdc",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

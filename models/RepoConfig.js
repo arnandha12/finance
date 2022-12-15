@@ -1,0 +1,1 @@
+{"table":"Retailer","db":"RetailerCustomer","verbs":"true"}

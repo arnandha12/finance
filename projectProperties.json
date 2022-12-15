@@ -255,8 +255,8 @@
     "camerasettings": "",
     "category": "app",
     "chat": "false",
-    "cloud_account_guid": "b719c42f-778e-465c-a5cf-94c45f7b09fe",
-    "cloud_env_GUID": null,
+    "cloud_account_guid": "54b81c51-50d8-4bbd-9a7b-888d2511c518",
+    "cloud_env_GUID": "50a093a6-b9eb-4916-a42a-5893cc5f9972",
     "codeGeneration": "false",
     "contacts": "false",
     "cordovaModified": false,
@@ -267,7 +267,7 @@
     "defaultZIndex": "1",
     "defaultlocalekey": "",
     "defaulttheme": "defaultTheme",
-    "desktopstartupformkey": "fe66dcbc7f554879a1df672d011cee56",
+    "desktopstartupformkey": "gc9f620731df4ac3b93400923c4dfa95",
     "desktopwebaligenmentoption": "left",
     "desktopwebbasefontsize": "16",
     "desktopwebfavico": "",
@@ -374,10 +374,10 @@
     "keyStoreFilePath": "",
     "keyStoreFilePathandwear": "",
     "kfAppInfo": {
-        "57e27988-dfbd-418d-ac06-4e26b74a1f64": {
-            "appName": "Test Basha",
-            "baseId": "c8f07d82-47fc-4488-afa5-7ddea03d00cc",
-            "id": "c8f07d82-47fc-4488-afa5-7ddea03d00cc",
+        "54b81c51-50d8-4bbd-9a7b-888d2511c518": {
+            "appName": "Murahaba Retailer Portal",
+            "baseId": "c45eec66-35d6-4385-9ae6-e84748564ea5",
+            "id": "c45eec66-35d6-4385-9ae6-e84748564ea5",
             "version": "1.0"
         }
     },

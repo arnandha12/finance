@@ -42,6 +42,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxGenerateVoucher",
+    "ide_onTouchStart": "AS_FlexContainer_j1f9e4b410e34345973dad7ac8a7fb30",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

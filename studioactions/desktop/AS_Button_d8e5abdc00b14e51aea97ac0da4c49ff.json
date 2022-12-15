@@ -13,11 +13,6 @@
             "KUID": "fe66dcbc7f554879a1df672d011cee56"
         },
         "language": "js",
-        "actions": [{
-            "id": "ADD_SNIPPET_ac2ce020a1414e5282da4d4821ca068f",
-            "type": "ADD_SNIPPET",
-            "codeSnippet": "var x = new kony.mvc.Navigation(\"frmResetPassword\");\nx.navigate();",
-            "parentId": null
-        }]
+        "actions": []
     }
 }

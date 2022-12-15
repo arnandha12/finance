@@ -43,7 +43,6 @@
     },
     "displaytext": true,
     "id": "btnContinue",
-    "ide_onClick": "AS_Button_e8eee17deedf466b91c3d032fb0e55d8",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

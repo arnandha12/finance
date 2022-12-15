@@ -1,0 +1,14 @@
+{
+  "name" : "MoraRetailerLogin",
+  "type" : "custom",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"custom_idp_url\":\"http://api2.staging.morafinance.com:8443/services/RetailerLoginAPI\",\"provider_params\":{},\"is_mfa_enabled\":false,\"body_params\":{},\"header_params\":[],\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"}}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

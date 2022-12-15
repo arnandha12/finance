@@ -42,6 +42,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxHomePage",
+    "ide_onClick": "AS_FlexContainer_af53079a402e482d8284b16b4e2197c2",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

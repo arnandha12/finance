@@ -1,0 +1,25 @@
+{
+  "subType" : "customapp",
+  "description" : "Murahaba Retailer Portal",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "RetailerDBService",
+    "version" : "1.0",
+    "etag" : "6c458c8b-a509-44c1-ab25-7b12a1bca5f4"
+  }, {
+    "name" : "RetailerJavaService",
+    "version" : "1.0",
+    "etag" : "f3d5e559-f4b9-4724-8309-48463a203d77"
+  }, {
+    "name" : "RetailerLoginAPI",
+    "version" : "1.0",
+    "etag" : "7e7a88da-942f-4ce1-82b0-a472da7140f7"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "RetailerCustomer",
+    "version" : "1.0",
+    "etag" : "98c5b6f8-6e48-4388-b6ff-91f0c649238b"
+  } ],
+  "identity" : [ "MoraRetailerLogin", "MoraRetailerRepo" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

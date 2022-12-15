@@ -42,6 +42,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxReedemVoucher",
+    "ide_onClick": "AS_FlexContainer_fbb194283db84aa8945e8a6a7b86ab8d",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

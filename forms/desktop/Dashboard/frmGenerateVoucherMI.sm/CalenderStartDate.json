@@ -65,10 +65,14 @@
         "calendarIcon": "dropdown2x.png"
     },
     "displayedMonths": [
-        11,
+        12,
         2022
     ],
-    "entereddate": null,
+    "entereddate": [
+        null,
+        null,
+        null
+    ],
     "format": "dd/MMM/yyyy",
     "formatteddate": "",
     "hidedaysheader": false,

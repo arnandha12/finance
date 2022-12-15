@@ -99,7 +99,7 @@
                 "srcKUID": "b051cef36bbd4120b469f1884643e05c",
                 "wType": "FlexContainer"
             },
-            "isVisible": true,
+            "isVisible": false,
             "responsiveData": {}
         },
         "flxLine3": {
@@ -132,7 +132,9 @@
                 "kuid": "d4bd6c89ad814f73a22f6a7aa09bc83d",
                 "srcKUID": "e2689688aa9c46cdae17a3475f40c519",
                 "wType": "FlexContainer"
-            }
+            },
+            "isVisible": true,
+            "responsiveData": {}
         },
         "flxModifyUser": {
             "__events__": {},
