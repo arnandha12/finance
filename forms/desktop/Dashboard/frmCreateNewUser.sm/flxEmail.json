@@ -2,11 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "72dp"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "value": "70px"
     },
     "_margin_": [
         0,
@@ -22,32 +18,37 @@
         0
     ],
     "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "10px"
+    },
     "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
     "_top_": {
         "type": "string",
-        "value": "50dp"
+        "value": "0px"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "45%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopyflxUsername0e27727ade06142"
+        "CopylblRole0cfa0b734f06445",
+        "CopytxtRole0dd48cd99f9a745"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxLine0bf3ae6260a8142",
+    "id": "flxEmail",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c80e0f06747a4d82bb9d1f8da18d83f4",
-    "layouttype": 2,
+    "kuid": "h2bbddb7f3c8446c95689c58cd74229a",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxUserDetails",
+    "parent": "flxLine2",
     "pf": "frmCreateNewUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
@@ -55,6 +56,5 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

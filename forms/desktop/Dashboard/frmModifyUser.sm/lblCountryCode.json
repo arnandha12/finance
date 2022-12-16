@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -21,15 +21,15 @@
         0,
         0
     ],
-    "_skin_": "s447b2567fad4284870872898e050475",
-    "_text_": "PHONE NUMBER",
+    "_skin_": "sf39a224f03d4c6e8df0a3da65d65bf5",
+    "_text_": "+966",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0"
     },
     "_width_": {
         "type": "string",
-        "value": "200px"
+        "value": "50px"
     },
     "_wrapping_": 2,
     "android": {
@@ -39,9 +39,13 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "CopylblUsername0j500f8f188b644",
+    "contentalignment": 5,
+    "id": "lblCountryCode",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,10 +59,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ga63c57fb387450f86c0d7af41efb6ce",
+    "kuid": "g4c7e8b33b9a485f82798f42874b230e",
     "name": "kony.ui.Label",
-    "parent": "CopyflxUsername0i42cda16c86a48",
-    "pf": "frmCreateNewUser",
+    "parent": "flxPhoneGroup",
+    "pf": "frmModifyUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

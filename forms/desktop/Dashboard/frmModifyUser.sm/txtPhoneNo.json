@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0"
+        "value": "50dp"
     },
     "_margin_": [
         0,
@@ -21,16 +21,16 @@
         0,
         0
     ],
-    "_placeholder_": "00000000000",
+    "_placeholder_": "Enter Phone Number",
     "_skin_": "s35e808a1d714aba858923ce8f41c519",
-    "_text_": "+966 9876543210",
+    "_text_": "50143254809",
     "_top_": {
         "type": "string",
-        "value": "10px"
+        "value": "0px"
     },
     "_width_": {
         "type": "string",
-        "value": "354px"
+        "value": "300px"
     },
     "autocapitalize": "none",
     "autocomplete": false,
@@ -41,16 +41,17 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
-    "focusskin": "s1384ce267e34e9d90112b4cfdff78b1",
-    "id": "txtPhoneNumber",
+    "disabledSkins": {},
+    "focusskin": "s2b7d82959524a86b6e98324eaba0151",
+    "id": "txtPhoneNo",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "a2924f5df90b499eb11e37032377b2ab",
+    "kuid": "cbcfa9c535954dec8770c5d5c8438f23",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "flxPhoneNumber",
+    "parent": "flxPhoneGroup",
     "pf": "frmModifyUser",
     "placeholderskin": "sd31bc1ed20e49cc8414e7df66e3b2cd",
     "retaincontentalignment": false,

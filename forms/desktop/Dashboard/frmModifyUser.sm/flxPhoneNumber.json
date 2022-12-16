@@ -36,7 +36,8 @@
     "canUpdateUI": true,
     "children": [
         "lblPhoneNumber",
-        "txtPhoneNumber"
+        "txtPhoneNumber",
+        "flxPhoneGroup"
     ],
     "clipbounds": false,
     "containerweight": 100,

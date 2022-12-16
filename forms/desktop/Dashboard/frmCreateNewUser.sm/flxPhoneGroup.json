@@ -1,12 +1,16 @@
 {
     "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_height_": {
         "type": "string",
-        "value": "70px"
+        "value": "40dp"
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "0"
     },
     "_margin_": [
         0,
@@ -22,33 +26,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
+    "_skin_": "se966acb7de94df28de190491c1de409",
     "_top_": {
         "type": "string",
-        "value": "0px"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "354px"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopylblUsername0d7cd8edd184b4c",
-        "CopytxtUsername0d10336d1364b44"
+        "lblCountryCode",
+        "txtPhoneNo"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxUsername0e27727ade06142",
+    "id": "flxPhoneGroup",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fbae1facb6604385a7228815806598f5",
-    "layouttype": 4,
+    "kuid": "geacb903673d4d1f8afcbd39e58e2b58",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxuserid",
+    "parent": "flxPhoneNo",
     "pf": "frmCreateNewUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

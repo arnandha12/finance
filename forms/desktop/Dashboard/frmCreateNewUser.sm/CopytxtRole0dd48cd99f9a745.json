@@ -50,7 +50,7 @@
     "kuid": "ed85e0fbeb5142a9a911dc4986d44fae",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "CopyflxRole0e6da14d352914a",
+    "parent": "flxEmail",
     "pf": "frmCreateNewUser",
     "placeholderskin": "sd31bc1ed20e49cc8414e7df66e3b2cd",
     "retaincontentalignment": false,

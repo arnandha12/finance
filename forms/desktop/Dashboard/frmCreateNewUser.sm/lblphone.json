@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "s447b2567fad4284870872898e050475",
-    "_text_": "EMAIL",
+    "_text_": "PHONE NUMBER",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopylblRole0cfa0b734f06445",
+    "id": "lblphone",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +55,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "ff8e35be198e4e22ace6eb79406d951b",
+    "kuid": "ga63c57fb387450f86c0d7af41efb6ce",
     "name": "kony.ui.Label",
-    "parent": "flxEmail",
+    "parent": "flxPhoneNo",
     "pf": "frmCreateNewUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
