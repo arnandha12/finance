@@ -25,7 +25,7 @@
     "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
     "_top_": {
         "type": "string",
-        "value": "10px"
+        "value": "20px"
     },
     "_width_": {
         "type": "string",
@@ -45,7 +45,7 @@
     "id": "flxError",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "d86e7327568e43c0969a080e0242ffee",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

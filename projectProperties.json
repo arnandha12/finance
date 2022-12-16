@@ -256,7 +256,7 @@
     "category": "app",
     "chat": "false",
     "cloud_account_guid": "54b81c51-50d8-4bbd-9a7b-888d2511c518",
-    "cloud_env_GUID": "50a093a6-b9eb-4916-a42a-5893cc5f9972",
+    "cloud_env_GUID": null,
     "codeGeneration": "false",
     "contacts": "false",
     "cordovaModified": false,
