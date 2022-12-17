@@ -37,6 +37,7 @@
     "children": [
         "lblRole",
         "txtRole",
+        "flxRoleSelection",
         "flxSegRole"
     ],
     "clipbounds": false,

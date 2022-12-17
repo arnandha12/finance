@@ -28,21 +28,27 @@ define([], function () {
         let repeatPassword = this.view.txtRepeatPassword.text;
         if(!password || !repeatPassword) {
           alert("Fill all the fields");
-        } else if(password != repeatPassword) {
+        } else if(password !== repeatPassword) {
           alert("Password not matched");
         } else {
+          //todo: have map the userid based on login
           var request = {
-            "UserName" : "samsunguser",
-            "ResetPassword" : password.trim()
+            "userid"     : "samsunguser",
+            "resetpassword": password.trim()
           };
+          kony.application.showLoadingScreen("", "Loading", "", "", "", "");
           var authManager = applicationManager.getAuthManager();
           authManager.resetPassword(request,this.resetPasswordSuccess,this.resetPasswordError);
         }
       },
       resetPasswordSuccess: function(success){
-        alert(success);
+        kony.application.dismissLoadingScreen();
+        alert("Password is successfully reset");
+        var x = new kony.mvc.Navigation("frmDashBoard");
+      	x.navigate();
       },
       resetPasswordError: function(error){
+        kony.application.dismissLoadingScreen();
         alert(error);
       },
       onTextChangePassword: function() {

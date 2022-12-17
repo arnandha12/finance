@@ -41,7 +41,9 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
-    "focusskin": "s1384ce267e34e9d90112b4cfdff78b1",
+    "disabledSkins": {
+        "focusSkin": "s1384ce267e34e9d90112b4cfdff78b1"
+    },
     "id": "txtUsername",
     "info": null,
     "iscustomlayout": false,

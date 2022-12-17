@@ -15,5 +15,20 @@ define([], function(){
 		return RetailerRepository.prototype.customVerb('resetPassword', params, onCompletion);
 	};
 
+	//For Operation 'modifyUser' with service id 'ModifyUser2473'
+	RetailerRepository.prototype.modifyUser = function(params, onCompletion){
+		return RetailerRepository.prototype.customVerb('modifyUser', params, onCompletion);
+	};
+
+	//For Operation 'getAllUser' with service id 'getAllUsers5565'
+	RetailerRepository.prototype.getAllUser = function(params, onCompletion){
+		return RetailerRepository.prototype.customVerb('getAllUser', params, onCompletion);
+	};
+
+	//For Operation 'createUser' with service id 'CreateNewUser9107'
+	RetailerRepository.prototype.createUser = function(params, onCompletion){
+		return RetailerRepository.prototype.customVerb('createUser', params, onCompletion);
+	};
+
 	return RetailerRepository;
 })

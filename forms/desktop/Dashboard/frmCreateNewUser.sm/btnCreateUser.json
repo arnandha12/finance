@@ -5,10 +5,6 @@
         "type": "string",
         "value": "50dp"
     },
-    "_left_": {
-        "type": "string",
-        "value": "273dp"
-    },
     "_margin_": [
         6,
         6,
@@ -21,7 +17,7 @@
         0,
         0
     ],
-    "_skin_": "sfb2f390ae6245b38c033f08f9cc3570",
+    "_skin_": "sc4b14fc33d54b20a99dfff6a4ec12f3",
     "_text_": "Create User",
     "_top_": {
         "type": "string",
@@ -32,11 +28,17 @@
         "value": "300dp"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s176815c9c1940f28494c7ee64682f8e"
+    },
     "displaytext": true,
-    "focusskin": "s176815c9c1940f28494c7ee64682f8e",
-    "id": "Button0f563acbd2bf645",
+    "id": "btnCreateUser",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

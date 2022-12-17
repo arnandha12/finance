@@ -16,12 +16,12 @@ define(['ApplicationManager'],function(ApplicationManager){
       let password = this.view.txtPassword.text;
       if(!username || !password) {
         this.view.flxError.isVisible = true;
-      	this.view.btnContinue.top = "20px";
+        this.view.btnContinue.top = "20px";
       } else {
         this.resetUI();
         let inputparam = {
-          "username" : username,
-          "password" : password
+          "username"  : username,
+          "password": password
         };
         kony.application.showLoadingScreen("", "Loading", "", "", "", "");
         applicationManager.getAuthManager().login(inputparam,this.loginSucess,this.loginError);
@@ -33,6 +33,8 @@ define(['ApplicationManager'],function(ApplicationManager){
       x.navigate();
     },
     loginError: function(error) {
+      this.view.flxError.isVisible = true;
+      this.view.btnContinue.top = "20px";
       kony.application.dismissLoadingScreen();
     }
   };

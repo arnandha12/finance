@@ -2,7 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "70px"
+        "value": "460px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -18,37 +22,43 @@
         0
     ],
     "_percent_": true,
-    "_right_": {
-        "type": "string",
-        "value": "10px"
-    },
-    "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
+    "_skin_": "sf1072d106ac4203b651157b0c135e5e",
     "_top_": {
         "type": "string",
-        "value": "0px"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "500px"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "51.73%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "CopylblRole0cfa0b734f06445",
-        "txtEmail"
+        "CopylblRetailPater0e7f1c5d87bf444",
+        "CopyflxLineSection0a8165898f2df4f",
+        "CopylblAcknowledgeMsg0i178658825624e",
+        "CopyflxBtn0h178ee0be72f40"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxEmail",
+    "id": "flxUserNotFound",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
-    "kuid": "h2bbddb7f3c8446c95689c58cd74229a",
-    "layouttype": 4,
+    "isvisible": false,
+    "kuid": "da1376717c2e4b899d72add5f9f92dff",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxLine2",
+    "parent": "flxRightPane",
     "pf": "frmCreateNewUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

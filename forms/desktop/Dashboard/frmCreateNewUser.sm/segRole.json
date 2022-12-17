@@ -17,7 +17,7 @@
     ],
     "_height_": {
         "type": "string",
-        "value": "95.53%"
+        "value": "95%"
     },
     "_indicator_": "none",
     "_left_": {
@@ -39,7 +39,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "11dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -49,6 +49,9 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "counter": "01",
+    "disabledSkins": {
+        "rowFocusSkin": "s81bee6c05da4ed2a18adb8f7714d88f"
+    },
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -83,7 +86,6 @@
     "retainselection": false,
     "rowTemplateId": "e1b3b910a3754050a6e54e0a901afc1e",
     "rowcounter": 1,
-    "rowfocusskin": "s81bee6c05da4ed2a18adb8f7714d88f",
     "rowskin": "s5e5ae4646444f04813b9d2b631deb42",
     "rowtemplate": "Flex0h569df2eddc746",
     "screenlevelwidget": false,
@@ -98,6 +100,7 @@
     "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorrequired": true,
+    "separatorthickness": 1,
     "showscrollbars": false,
     "viewtype": "tableview",
     "vizProps": {},

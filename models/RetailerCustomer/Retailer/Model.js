@@ -9,70 +9,95 @@ define([], function() {
     var context = {"object" : "Retailer", "objectService" : "RetailerCustomer"};
 
     var setterFunctions = {
-        UserName: function(val, state) {
-            context["field"] = "UserName";
-            context["metadata"] = (objectMetadata ? objectMetadata["UserName"] : null);
-            state['UserName'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        userid: function(val, state) {
+            context["field"] = "userid";
+            context["metadata"] = (objectMetadata ? objectMetadata["userid"] : null);
+            state['userid'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
-        Password: function(val, state) {
-            context["field"] = "Password";
-            context["metadata"] = (objectMetadata ? objectMetadata["Password"] : null);
-            state['Password'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        password: function(val, state) {
+            context["field"] = "password";
+            context["metadata"] = (objectMetadata ? objectMetadata["password"] : null);
+            state['password'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
-        TempPassword: function(val, state) {
-            context["field"] = "TempPassword";
-            context["metadata"] = (objectMetadata ? objectMetadata["TempPassword"] : null);
-            state['TempPassword'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        temppassword: function(val, state) {
+            context["field"] = "temppassword";
+            context["metadata"] = (objectMetadata ? objectMetadata["temppassword"] : null);
+            state['temppassword'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
-        ResetPassword: function(val, state) {
-            context["field"] = "ResetPassword";
-            context["metadata"] = (objectMetadata ? objectMetadata["ResetPassword"] : null);
-            state['ResetPassword'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        resetpassword: function(val, state) {
+            context["field"] = "resetpassword";
+            context["metadata"] = (objectMetadata ? objectMetadata["resetpassword"] : null);
+            state['resetpassword'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
         status: function(val, state) {
             context["field"] = "status";
             context["metadata"] = (objectMetadata ? objectMetadata["status"] : null);
             state['status'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
-        RetailerId: function(val, state) {
-            context["field"] = "RetailerId";
-            context["metadata"] = (objectMetadata ? objectMetadata["RetailerId"] : null);
-            state['RetailerId'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        retailerid: function(val, state) {
+            context["field"] = "retailerid";
+            context["metadata"] = (objectMetadata ? objectMetadata["retailerid"] : null);
+            state['retailerid'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        retailername: function(val, state) {
+            context["field"] = "retailername";
+            context["metadata"] = (objectMetadata ? objectMetadata["retailername"] : null);
+            state['retailername'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        role: function(val, state) {
+            context["field"] = "role";
+            context["metadata"] = (objectMetadata ? objectMetadata["role"] : null);
+            state['role'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        phoneno: function(val, state) {
+            context["field"] = "phoneno";
+            context["metadata"] = (objectMetadata ? objectMetadata["phoneno"] : null);
+            state['phoneno'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        emailid: function(val, state) {
+            context["field"] = "emailid";
+            context["metadata"] = (objectMetadata ? objectMetadata["emailid"] : null);
+            state['emailid'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        username: function(val, state) {
+            context["field"] = "username";
+            context["metadata"] = (objectMetadata ? objectMetadata["username"] : null);
+            state['username'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
     };
 
     //Create the Model Class
     function Retailer(defaultValues) {
         var privateState = {};
-        context["field"] = "UserName";
-        context["metadata"] = (objectMetadata ? objectMetadata["UserName"] : null);
-        privateState.UserName = defaultValues ?
-            (defaultValues["UserName"] ?
-                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["UserName"], context) :
+        context["field"] = "userid";
+        context["metadata"] = (objectMetadata ? objectMetadata["userid"] : null);
+        privateState.userid = defaultValues ?
+            (defaultValues["userid"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["userid"], context) :
                 null) :
             null;
 
-        context["field"] = "Password";
-        context["metadata"] = (objectMetadata ? objectMetadata["Password"] : null);
-        privateState.Password = defaultValues ?
-            (defaultValues["Password"] ?
-                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["Password"], context) :
+        context["field"] = "password";
+        context["metadata"] = (objectMetadata ? objectMetadata["password"] : null);
+        privateState.password = defaultValues ?
+            (defaultValues["password"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["password"], context) :
                 null) :
             null;
 
-        context["field"] = "TempPassword";
-        context["metadata"] = (objectMetadata ? objectMetadata["TempPassword"] : null);
-        privateState.TempPassword = defaultValues ?
-            (defaultValues["TempPassword"] ?
-                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["TempPassword"], context) :
+        context["field"] = "temppassword";
+        context["metadata"] = (objectMetadata ? objectMetadata["temppassword"] : null);
+        privateState.temppassword = defaultValues ?
+            (defaultValues["temppassword"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["temppassword"], context) :
                 null) :
             null;
 
-        context["field"] = "ResetPassword";
-        context["metadata"] = (objectMetadata ? objectMetadata["ResetPassword"] : null);
-        privateState.ResetPassword = defaultValues ?
-            (defaultValues["ResetPassword"] ?
-                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["ResetPassword"], context) :
+        context["field"] = "resetpassword";
+        context["metadata"] = (objectMetadata ? objectMetadata["resetpassword"] : null);
+        privateState.resetpassword = defaultValues ?
+            (defaultValues["resetpassword"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["resetpassword"], context) :
                 null) :
             null;
 
@@ -84,11 +109,51 @@ define([], function() {
                 null) :
             null;
 
-        context["field"] = "RetailerId";
-        context["metadata"] = (objectMetadata ? objectMetadata["RetailerId"] : null);
-        privateState.RetailerId = defaultValues ?
-            (defaultValues["RetailerId"] ?
-                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["RetailerId"], context) :
+        context["field"] = "retailerid";
+        context["metadata"] = (objectMetadata ? objectMetadata["retailerid"] : null);
+        privateState.retailerid = defaultValues ?
+            (defaultValues["retailerid"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["retailerid"], context) :
+                null) :
+            null;
+
+        context["field"] = "retailername";
+        context["metadata"] = (objectMetadata ? objectMetadata["retailername"] : null);
+        privateState.retailername = defaultValues ?
+            (defaultValues["retailername"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["retailername"], context) :
+                null) :
+            null;
+
+        context["field"] = "role";
+        context["metadata"] = (objectMetadata ? objectMetadata["role"] : null);
+        privateState.role = defaultValues ?
+            (defaultValues["role"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["role"], context) :
+                null) :
+            null;
+
+        context["field"] = "phoneno";
+        context["metadata"] = (objectMetadata ? objectMetadata["phoneno"] : null);
+        privateState.phoneno = defaultValues ?
+            (defaultValues["phoneno"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["phoneno"], context) :
+                null) :
+            null;
+
+        context["field"] = "emailid";
+        context["metadata"] = (objectMetadata ? objectMetadata["emailid"] : null);
+        privateState.emailid = defaultValues ?
+            (defaultValues["emailid"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["emailid"], context) :
+                null) :
+            null;
+
+        context["field"] = "username";
+        context["metadata"] = (objectMetadata ? objectMetadata["username"] : null);
+        privateState.username = defaultValues ?
+            (defaultValues["username"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["username"], context) :
                 null) :
             null;
 
@@ -98,47 +163,47 @@ define([], function() {
 
         //Defining Getter/Setters
         Object.defineProperties(this, {
-            "UserName": {
+            "userid": {
                 get: function() {
-                    context["field"] = "UserName";
-                    context["metadata"] = (objectMetadata ? objectMetadata["UserName"] : null);
-                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.UserName, context);
+                    context["field"] = "userid";
+                    context["metadata"] = (objectMetadata ? objectMetadata["userid"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.userid, context);
                 },
                 set: function(val) {
-                    setterFunctions['UserName'].call(this, val, privateState);
+                    setterFunctions['userid'].call(this, val, privateState);
                 },
                 enumerable: true,
             },
-            "Password": {
+            "password": {
                 get: function() {
-                    context["field"] = "Password";
-                    context["metadata"] = (objectMetadata ? objectMetadata["Password"] : null);
-                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.Password, context);
+                    context["field"] = "password";
+                    context["metadata"] = (objectMetadata ? objectMetadata["password"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.password, context);
                 },
                 set: function(val) {
-                    setterFunctions['Password'].call(this, val, privateState);
+                    setterFunctions['password'].call(this, val, privateState);
                 },
                 enumerable: true,
             },
-            "TempPassword": {
+            "temppassword": {
                 get: function() {
-                    context["field"] = "TempPassword";
-                    context["metadata"] = (objectMetadata ? objectMetadata["TempPassword"] : null);
-                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.TempPassword, context);
+                    context["field"] = "temppassword";
+                    context["metadata"] = (objectMetadata ? objectMetadata["temppassword"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.temppassword, context);
                 },
                 set: function(val) {
-                    setterFunctions['TempPassword'].call(this, val, privateState);
+                    setterFunctions['temppassword'].call(this, val, privateState);
                 },
                 enumerable: true,
             },
-            "ResetPassword": {
+            "resetpassword": {
                 get: function() {
-                    context["field"] = "ResetPassword";
-                    context["metadata"] = (objectMetadata ? objectMetadata["ResetPassword"] : null);
-                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.ResetPassword, context);
+                    context["field"] = "resetpassword";
+                    context["metadata"] = (objectMetadata ? objectMetadata["resetpassword"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.resetpassword, context);
                 },
                 set: function(val) {
-                    setterFunctions['ResetPassword'].call(this, val, privateState);
+                    setterFunctions['resetpassword'].call(this, val, privateState);
                 },
                 enumerable: true,
             },
@@ -153,14 +218,69 @@ define([], function() {
                 },
                 enumerable: true,
             },
-            "RetailerId": {
+            "retailerid": {
                 get: function() {
-                    context["field"] = "RetailerId";
-                    context["metadata"] = (objectMetadata ? objectMetadata["RetailerId"] : null);
-                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.RetailerId, context);
+                    context["field"] = "retailerid";
+                    context["metadata"] = (objectMetadata ? objectMetadata["retailerid"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.retailerid, context);
                 },
                 set: function(val) {
-                    setterFunctions['RetailerId'].call(this, val, privateState);
+                    setterFunctions['retailerid'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "retailername": {
+                get: function() {
+                    context["field"] = "retailername";
+                    context["metadata"] = (objectMetadata ? objectMetadata["retailername"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.retailername, context);
+                },
+                set: function(val) {
+                    setterFunctions['retailername'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "role": {
+                get: function() {
+                    context["field"] = "role";
+                    context["metadata"] = (objectMetadata ? objectMetadata["role"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.role, context);
+                },
+                set: function(val) {
+                    setterFunctions['role'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "phoneno": {
+                get: function() {
+                    context["field"] = "phoneno";
+                    context["metadata"] = (objectMetadata ? objectMetadata["phoneno"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.phoneno, context);
+                },
+                set: function(val) {
+                    setterFunctions['phoneno'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "emailid": {
+                get: function() {
+                    context["field"] = "emailid";
+                    context["metadata"] = (objectMetadata ? objectMetadata["emailid"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.emailid, context);
+                },
+                set: function(val) {
+                    setterFunctions['emailid'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "username": {
+                get: function() {
+                    context["field"] = "username";
+                    context["metadata"] = (objectMetadata ? objectMetadata["username"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.username, context);
+                },
+                set: function(val) {
+                    setterFunctions['username'].call(this, val, privateState);
                 },
                 enumerable: true,
             },
@@ -173,12 +293,17 @@ define([], function() {
 
         //overwrites object state with provided json value in argument.
         this.fromJsonInternal = function(value) {
-            privateState.UserName = value ? (value["UserName"] ? value["UserName"] : null) : null;
-            privateState.Password = value ? (value["Password"] ? value["Password"] : null) : null;
-            privateState.TempPassword = value ? (value["TempPassword"] ? value["TempPassword"] : null) : null;
-            privateState.ResetPassword = value ? (value["ResetPassword"] ? value["ResetPassword"] : null) : null;
+            privateState.userid = value ? (value["userid"] ? value["userid"] : null) : null;
+            privateState.password = value ? (value["password"] ? value["password"] : null) : null;
+            privateState.temppassword = value ? (value["temppassword"] ? value["temppassword"] : null) : null;
+            privateState.resetpassword = value ? (value["resetpassword"] ? value["resetpassword"] : null) : null;
             privateState.status = value ? (value["status"] ? value["status"] : null) : null;
-            privateState.RetailerId = value ? (value["RetailerId"] ? value["RetailerId"] : null) : null;
+            privateState.retailerid = value ? (value["retailerid"] ? value["retailerid"] : null) : null;
+            privateState.retailername = value ? (value["retailername"] ? value["retailername"] : null) : null;
+            privateState.role = value ? (value["role"] ? value["role"] : null) : null;
+            privateState.phoneno = value ? (value["phoneno"] ? value["phoneno"] : null) : null;
+            privateState.emailid = value ? (value["emailid"] ? value["emailid"] : null) : null;
+            privateState.username = value ? (value["username"] ? value["username"] : null) : null;
         };
     }
 
@@ -210,6 +335,21 @@ define([], function() {
     //For Operation 'resetPassword' with service id 'ResetPassword7664'
      Retailer.resetPassword = function(params, onCompletion){
         return Retailer.customVerb('resetPassword', params, onCompletion);
+     };
+
+    //For Operation 'modifyUser' with service id 'ModifyUser2473'
+     Retailer.modifyUser = function(params, onCompletion){
+        return Retailer.customVerb('modifyUser', params, onCompletion);
+     };
+
+    //For Operation 'getAllUser' with service id 'getAllUsers5565'
+     Retailer.getAllUser = function(params, onCompletion){
+        return Retailer.customVerb('getAllUser', params, onCompletion);
+     };
+
+    //For Operation 'createUser' with service id 'CreateNewUser9107'
+     Retailer.createUser = function(params, onCompletion){
+        return Retailer.customVerb('createUser', params, onCompletion);
      };
 
     var relations = [];

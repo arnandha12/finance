@@ -207,6 +207,14 @@ return kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(
 };
 
 /**
+* returns RetailerManager object 
+* @returns {object} value gives RetailerManager object 
+*/
+ApplicationManager.prototype.getRetailerManager = function() {		
+return kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule('RetailerManager').businessController;
+};
+
+/**
 * returns CampaignManagementManager object 
 * @returns {object} value gives AuthManager object 
 */

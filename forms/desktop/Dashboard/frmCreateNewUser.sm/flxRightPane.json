@@ -36,7 +36,8 @@
     "canUpdateUI": true,
     "children": [
         "imgBg",
-        "flxContent"
+        "flxContent",
+        "flxUserNotFound"
     ],
     "clipbounds": false,
     "containerweight": 100,

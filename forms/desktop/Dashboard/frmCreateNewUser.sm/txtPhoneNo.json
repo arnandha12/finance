@@ -41,8 +41,9 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
-    "disabledSkins": {},
-    "focusskin": "s2b7d82959524a86b6e98324eaba0151",
+    "disabledSkins": {
+        "focusSkin": "s2b7d82959524a86b6e98324eaba0151"
+    },
     "id": "txtPhoneNo",
     "info": null,
     "iscustomlayout": false,

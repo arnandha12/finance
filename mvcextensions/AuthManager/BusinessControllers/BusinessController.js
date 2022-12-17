@@ -28,7 +28,14 @@ define([], function () {
     var userRepo =  kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("Retailer");
     userRepo.customVerb('resetPassword', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
-      alert("status"+status+" data "+data+" error "+error)
+      //alert("status"+status+" data "+data+" error "+error)
+      if(data.opstatus === 0){
+        if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
+          failureCallback(data);
+        } else {
+          successCallback(data);
+        }
+      }
     } 
     function successCallback(resSucess){
       sucessCB(resSucess);

@@ -40,7 +40,8 @@
     },
     "children": [
         "flxTopContent",
-        "flxUserDetails"
+        "flxUserDetails",
+        "flxsubheader"
     ],
     "clipbounds": false,
     "containerweight": 100,

@@ -45,7 +45,7 @@
     "id": "txtRole",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "keyboardtype": "A",
     "kuid": "f15dd44008c7413da6b1390d42076f18",
     "mode": "A",

@@ -21,7 +21,7 @@
         0,
         0
     ],
-    "_placeholder_": "Enter user ID",
+    "_placeholder_": "example@mail.com",
     "_skin_": "s35e808a1d714aba858923ce8f41c519",
     "_text_": "",
     "_top_": {
@@ -41,16 +41,18 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
-    "focusskin": "s1384ce267e34e9d90112b4cfdff78b1",
-    "id": "CopytxtUsername0d10336d1364b44",
+    "disabledSkins": {
+        "focusSkin": "s1384ce267e34e9d90112b4cfdff78b1"
+    },
+    "id": "txtEmail",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "b339558485a84e1c9643426952bf5323",
+    "kuid": "ed85e0fbeb5142a9a911dc4986d44fae",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "CopyflxUsername0e27727ade06142",
+    "parent": "flxEmail",
     "pf": "frmCreateNewUser",
     "placeholderskin": "sd31bc1ed20e49cc8414e7df66e3b2cd",
     "retaincontentalignment": false,

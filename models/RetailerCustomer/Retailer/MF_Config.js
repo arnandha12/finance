@@ -3,29 +3,39 @@
 */
 define([], function() {
 	var mappings = {
-		"UserName": "UserName",
-		"Password": "Password",
-		"TempPassword": "TempPassword",
-		"ResetPassword": "ResetPassword",
+		"userid": "userid",
+		"password": "password",
+		"temppassword": "temppassword",
+		"resetpassword": "resetpassword",
 		"status": "status",
-		"RetailerId": "RetailerId",
+		"retailerid": "retailerid",
+		"retailername": "retailername",
+		"role": "role",
+		"phoneno": "phoneno",
+		"emailid": "emailid",
+		"username": "username",
 	};
 
 	Object.freeze(mappings);
 
 	var typings = {
-		"UserName": "string",
-		"Password": "string",
-		"TempPassword": "string",
-		"ResetPassword": "string",
+		"userid": "string",
+		"password": "string",
+		"temppassword": "string",
+		"resetpassword": "string",
 		"status": "string",
-		"RetailerId": "string",
+		"retailerid": "string",
+		"retailername": "string",
+		"role": "string",
+		"phoneno": "string",
+		"emailid": "string",
+		"username": "string",
 	}
 
 	Object.freeze(typings);
 
 	var primaryKeys = [
-					"RetailerId",
+					"userid",
 	];
 
 	Object.freeze(primaryKeys);

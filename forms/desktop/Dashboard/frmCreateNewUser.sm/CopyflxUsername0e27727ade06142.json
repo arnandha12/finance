@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "CopylblUsername0d7cd8edd184b4c",
-        "CopytxtUsername0d10336d1364b44"
+        "txtUserId"
     ],
     "clipbounds": false,
     "containerweight": 100,

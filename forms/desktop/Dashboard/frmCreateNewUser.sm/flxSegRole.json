@@ -6,11 +6,11 @@
     },
     "_height_": {
         "type": "string",
-        "value": "180px"
+        "value": "150px"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "2%"
     },
     "_margin_": [
         0,
@@ -33,7 +33,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "354px"
+        "value": "340px"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -47,7 +47,7 @@
     "id": "flxSegRole",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "d198090d2e874128a3e5ac7ff0d782d6",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
