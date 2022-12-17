@@ -4,10 +4,6 @@
         "type": "string",
         "value": "855px"
     },
-    "_left_": {
-        "type": "string",
-        "value": "10px"
-    },
     "_margin_": [
         0,
         0,
@@ -29,11 +25,15 @@
     },
     "_width_": {
         "type": "string",
-        "value": "1026px"
+        "value": "92%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "flxTopContent",
         "flxUserDetailsSection",

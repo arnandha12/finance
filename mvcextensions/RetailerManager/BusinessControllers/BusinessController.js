@@ -30,5 +30,26 @@ define([], function () {
       errorCB(resError);
     }
   };
+  RetailerManager.prototype.getAllUser = function(params,sucessCB,errorCB) {
+    var self = this;
+    var userRepo =  kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("Retailer");
+    userRepo.customVerb('getAllUser', params, serviceCompletionCallback);
+    function serviceCompletionCallback(status, data, error) {
+      //alert("status"+status+" data "+data+" error "+error);
+      if(data.opstatus === 0){
+        if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
+          failureCallback(data);
+        } else {
+          successCallback(data);
+        }
+      }
+    } 
+    function successCallback(resSucess){
+      sucessCB(resSucess);
+    }
+    function failureCallback(resError){
+      errorCB(resError);
+    }
+  };
   return RetailerManager;
 });

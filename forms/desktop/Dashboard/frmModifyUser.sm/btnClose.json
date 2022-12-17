@@ -3,11 +3,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "273dp"
+        "value": "0dp"
     },
     "_margin_": [
         6,
@@ -21,33 +21,31 @@
         0,
         0
     ],
-    "_skin_": "sfb2f390ae6245b38c033f08f9cc3570",
-    "_text_": "Save",
+    "_skin_": "sfdcba3a6119451c93855b490c524b66",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "70dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "100%"
     },
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 5,
-    "disabledSkins": {
-        "focusSkin": "s176815c9c1940f28494c7ee64682f8e"
-    },
     "displaytext": true,
-    "id": "btnResetUserPassword",
+    "focusskin": "s176815c9c1940f28494c7ee64682f8e",
+    "id": "btnClose",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "j4b95a6afd62423eb01bf4e14a14a4fd",
+    "kuid": "fab32afd3ae947dfaa28d5315c73f0d7",
     "name": "kony.ui.Button",
-    "parent": "flxUserDetailsSection",
+    "parent": "flxClose",
     "pf": "frmModifyUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "wType": "Button",
-    "zindex": 1
+    "zindex": 3
 }

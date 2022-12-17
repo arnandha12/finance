@@ -25,7 +25,7 @@
     "_skin_": "sc1a95316f404d5baa27464bee54b8a3",
     "_top_": {
         "type": "string",
-        "value": "-5px"
+        "value": "-30px"
     },
     "_width_": {
         "type": "string",
@@ -43,7 +43,7 @@
     "id": "flxSegmentSearchList",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "f8f4d94b482a4662b23d9f5c2d31215d",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

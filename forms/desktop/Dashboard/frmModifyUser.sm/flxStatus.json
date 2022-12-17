@@ -41,7 +41,9 @@
     "children": [
         "lblStatus",
         "txtStatus",
-        "lstboxstatus"
+        "lstboxstatus",
+        "flxStatusSelection",
+        "flxSegStatus"
     ],
     "clipbounds": false,
     "containerweight": 100,

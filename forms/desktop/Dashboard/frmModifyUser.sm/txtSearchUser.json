@@ -22,7 +22,7 @@
         0
     ],
     "_placeholder_": "Please enter User ID, Mobile Number or Email ID ",
-    "_skin_": "sd0eb8668195431e962322e4d57f76a6",
+    "_skin_": "s87a7175ff454c0587892657046a4b1d",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -49,12 +49,17 @@
     "disabledSkins": {
         "placeholderSkin": "s32fb9524cd64b23820d6d192024eba0"
     },
-    "focusskin": "s1384ce267e34e9d90112b4cfdff78b1",
+    "focusskin": "s87a7175ff454c0587892657046a4b1d",
     "id": "txtSearchUser",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "keyboardtype": "A",
+    "kiosk": {
+        "psp": {
+            "autoFilter": false
+        }
+    },
     "kuid": "g427c564709649bbbe0e2e6cafb2e139",
     "mode": "A",
     "name": "kony.ui.TextBox2",

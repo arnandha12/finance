@@ -5,67 +5,19 @@
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Active"
             }
         },
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Unactive"
             }
         }
     ],
     "_height_": {
         "type": "string",
-        "value": "92%"
+        "value": "95.53%"
     },
     "_indicator_": "none",
     "_left_": {
@@ -87,7 +39,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "25dp"
+        "value": "11dp"
     },
     "_width_": {
         "type": "string",
@@ -96,12 +48,12 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "09",
+    "counter": "01",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
-    "id": "segUsers",
+    "id": "segActive",
     "info": null,
     "ipad": {
         "psp": {
@@ -115,7 +67,7 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b09e37421f324d21bd317293efcb8573",
+    "kuid": "ffa1a775d6484b53bd26730a02ed1103",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -124,27 +76,27 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "flxSegmentSearchList",
+    "parent": "flxSegStatus",
     "pf": "frmModifyUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "e1b3b910a3754050a6e54e0a901afc1e",
-    "rowcounter": 9,
+    "rowcounter": 1,
     "rowfocusskin": "s81bee6c05da4ed2a18adb8f7714d88f",
     "rowskin": "s5e5ae4646444f04813b9d2b631deb42",
     "rowtemplate": "Flex0h569df2eddc746",
     "screenlevelwidget": false,
     "seccounter": 0,
+    "sectionHeaderTemplateId": null,
     "sectionheaderskin": "se8df2ae45ab4af49177ede3aeb9f9d9",
     "selectedRows": null,
     "selectedState": false,
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
-    "separatorcolor": "e4e4e433",
     "separatorrequired": true,
     "showscrollbars": false,
     "viewtype": "tableview",
@@ -154,5 +106,6 @@
     "widgetdatamap": {
         "flxUserList": "flxUserList",
         "lblUserName": "lblUserName"
-    }
+    },
+    "zindex": 20
 }

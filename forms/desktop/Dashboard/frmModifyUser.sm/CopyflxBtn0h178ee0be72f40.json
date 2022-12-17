@@ -36,7 +36,7 @@
     "canUpdateUI": true,
     "children": [
         "CopyflxSep0a4bf1c9d611a4c",
-        "CopybtnContinue0e13888c480294d"
+        "btnSearchAgain"
     ],
     "clipbounds": false,
     "containerweight": 100,

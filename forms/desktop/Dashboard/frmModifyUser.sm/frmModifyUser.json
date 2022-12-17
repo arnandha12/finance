@@ -75,6 +75,8 @@
     "enabledforidletimeout": false,
     "friendlyName": "frmModifyUser",
     "id": "frmModifyUser",
+    "ide_postShow": "AS_Form_g9cdd0378599449380e0539232e540a3",
+    "ide_preShow": "AS_Form_d43b11de05d444998899d9ca26e841eb",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

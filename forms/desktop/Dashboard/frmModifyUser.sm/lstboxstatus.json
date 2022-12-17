@@ -52,7 +52,7 @@
     "id": "lstboxstatus",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kiosk": {
         "psp": {
             "placeholder": "Active"

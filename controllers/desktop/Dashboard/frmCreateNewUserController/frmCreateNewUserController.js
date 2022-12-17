@@ -82,15 +82,18 @@ define([],function(){
       }
     },
     createNewUser: function() {
-		var retailerManager = applicationManager.getRetailerManager();
-        retailerManager.createUser(createUser,this.createUserSucess,this.createUserError);
+      kony.application.showLoadingScreen("", "Loading", "", "", "", "");
+      var retailerManager = applicationManager.getRetailerManager();
+      retailerManager.createUser(createUser,this.createUserSucess,this.createUserError);
     },
     createUserSucess: function(sucess) {
       //alert(sucess);
+      kony.application.dismissLoadingScreen();
       this.resetUI();
       this.view.flxUserNotFound.isVisible = true;
     },
     createUserError: function(error) {
+      kony.application.dismissLoadingScreen();
       if(error.dbpErrMsg)
         alert(error.dbpErrMsg);
     }
