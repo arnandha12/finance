@@ -3,7 +3,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         6,
@@ -17,37 +21,31 @@
         0,
         0
     ],
-    "_skin_": "sfb2f390ae6245b38c033f08f9cc3570",
-    "_text_": "Reset User Password",
+    "_skin_": "sfdcba3a6119451c93855b490c524b66",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "70dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "100%"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
-    "disabledSkins": {
-        "focusSkin": "s176815c9c1940f28494c7ee64682f8e"
-    },
     "displaytext": true,
-    "id": "btnResetUserPassword",
+    "focusskin": "s176815c9c1940f28494c7ee64682f8e",
+    "id": "btnClose",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e061f93980cd45a680d2e9586705dfe3",
+    "kuid": "c260b8ac704a48819ba5e8e1d6e6eb88",
     "name": "kony.ui.Button",
-    "parent": "flxUserDetailsSection",
+    "parent": "flxClose",
     "pf": "frmResetUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "wType": "Button",
-    "zindex": 1
+    "zindex": 3
 }

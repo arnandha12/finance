@@ -36,7 +36,8 @@
     "canUpdateUI": true,
     "children": [
         "lblRoleSelection",
-        "imgArrow"
+        "imgArrow",
+        "btnRoleSelection"
     ],
     "clipbounds": false,
     "containerweight": 100,

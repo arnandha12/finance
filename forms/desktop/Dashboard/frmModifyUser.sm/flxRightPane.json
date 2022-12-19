@@ -38,7 +38,8 @@
         "imgBg",
         "flxUserSearch",
         "flxUserDetails",
-        "flxUserNotFound"
+        "flxUserNotFound",
+        "flxModifiedSucess"
     ],
     "clipbounds": false,
     "containerweight": 100,

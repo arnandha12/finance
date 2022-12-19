@@ -30,5 +30,10 @@ define([], function(){
 		return RetailerRepository.prototype.customVerb('createUser', params, onCompletion);
 	};
 
+	//For Operation 'resendPassword' with service id 'ResendPassword1237'
+	RetailerRepository.prototype.resendPassword = function(params, onCompletion){
+		return RetailerRepository.prototype.customVerb('resendPassword', params, onCompletion);
+	};
+
 	return RetailerRepository;
 })

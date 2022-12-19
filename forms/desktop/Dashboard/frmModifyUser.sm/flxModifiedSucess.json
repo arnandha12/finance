@@ -43,20 +43,20 @@
         "value": "48.12%"
     },
     "children": [
-        "CopylblRetailPater0e7f1c5d87bf444",
-        "CopyflxLineSection0a8165898f2df4f",
-        "CopylblRetailPater0cae4042c971b4c",
-        "CopylblAcknowledgeMsg0i178658825624e",
-        "CopyflxBtn0h178ee0be72f40"
+        "CopylblRetailPater0b9fca878eb5c4b",
+        "CopyflxLineSection0a59f4c8ca7cf4d",
+        "CopylblRetailPater0b84c7712ff234a",
+        "CopylblAcknowledgeMsg0b2718e85338845",
+        "CopyflxBtn0f33011ba77044d"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxUserNotFound",
+    "id": "flxModifiedSucess",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "jb51d5e2c1af451ebc92645fd03bdef7",
+    "kuid": "c06e561f1e8c46898e43756b01824139",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxRightPane",

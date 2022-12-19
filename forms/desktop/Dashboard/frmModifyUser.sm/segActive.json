@@ -11,7 +11,7 @@
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Unactive"
+                "text": "Inactive"
             }
         }
     ],

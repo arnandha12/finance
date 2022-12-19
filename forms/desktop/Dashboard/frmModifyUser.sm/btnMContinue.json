@@ -5,6 +5,10 @@
         "type": "string",
         "value": "50dp"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
     "_margin_": [
         6,
         6,
@@ -17,20 +21,20 @@
         0,
         0
     ],
-    "_skin_": "sfb2f390ae6245b38c033f08f9cc3570",
-    "_text_": "Reset User Password",
+    "_skin_": "se2e7f785be140a8a92e6f339cee45b6",
+    "_text_": "Continue",
     "_top_": {
         "type": "string",
-        "value": "70dp"
+        "value": "35%"
     },
     "_width_": {
         "type": "string",
-        "value": "300dp"
+        "value": "150dp"
     },
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "49.99%"
     },
     "containerweight": 100,
     "contentalignment": 5,
@@ -38,16 +42,15 @@
         "focusSkin": "s176815c9c1940f28494c7ee64682f8e"
     },
     "displaytext": true,
-    "id": "btnResetUserPassword",
+    "id": "btnMContinue",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e061f93980cd45a680d2e9586705dfe3",
+    "kuid": "d3ed346383c64ae2b9543d12740217e4",
     "name": "kony.ui.Button",
-    "parent": "flxUserDetailsSection",
-    "pf": "frmResetUser",
+    "parent": "CopyflxBtn0f33011ba77044d",
+    "pf": "frmModifyUser",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "wType": "Button",
-    "zindex": 1
+    "wType": "Button"
 }

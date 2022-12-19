@@ -54,7 +54,7 @@
     "id": "flxConfirmationPopup",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "b097c9bbb6e5460cbdb9c5a5955a6cbd",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

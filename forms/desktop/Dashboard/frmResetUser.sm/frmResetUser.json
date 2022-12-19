@@ -71,6 +71,8 @@
     "enabledforidletimeout": false,
     "friendlyName": "frmResetUser",
     "id": "frmResetUser",
+    "ide_postShow": "AS_Form_cc5dfa48069f49be9b7f20cfdae0ff8a",
+    "ide_preShow": "AS_Form_a8e7620245c94b5888f187f0e69b34ce",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

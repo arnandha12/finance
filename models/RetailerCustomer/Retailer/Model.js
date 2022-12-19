@@ -352,6 +352,11 @@ define([], function() {
         return Retailer.customVerb('createUser', params, onCompletion);
      };
 
+    //For Operation 'resendPassword' with service id 'ResendPassword1237'
+     Retailer.resendPassword = function(params, onCompletion){
+        return Retailer.customVerb('resendPassword', params, onCompletion);
+     };
+
     var relations = [];
 
     Retailer.relations = relations;

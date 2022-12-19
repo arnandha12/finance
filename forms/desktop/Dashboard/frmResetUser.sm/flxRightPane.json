@@ -37,7 +37,8 @@
     "children": [
         "imgBg",
         "flxUserSearch",
-        "flxUserDetails"
+        "flxUserDetails",
+        "flxUserNotFound"
     ],
     "clipbounds": false,
     "containerweight": 100,

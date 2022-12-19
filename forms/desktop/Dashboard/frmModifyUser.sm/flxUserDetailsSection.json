@@ -42,7 +42,7 @@
         "flxLine1",
         "flxLine2",
         "flxLine3",
-        "btnResetUserPassword"
+        "btnModifyUser"
     ],
     "clipbounds": false,
     "containerweight": 100,
