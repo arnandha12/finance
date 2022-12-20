@@ -8,6 +8,11 @@ define([], function(){
 			config : "RetailerCustomer/Retailer/MF_Config",
 			repository : "RetailerCustomer/Retailer/Repository",
 		},
+		voucher  : {
+			model : "VoucherObject/voucher/Model",
+			config : "VoucherObject/voucher/MF_Config",
+			repository : "VoucherObject/voucher/Repository",
+		},
 	};
 
 	return repoMapping;

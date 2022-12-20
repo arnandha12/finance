@@ -37,8 +37,7 @@
     "children": [
         "flxTopHeader",
         "flxSearch",
-        "flxSegmentSearchList",
-        "flxPopupVoucherNotfound"
+        "flxSegmentSearchList"
     ],
     "clipbounds": false,
     "containerweight": 100,
@@ -48,7 +47,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "bc25fea182f0409283971662aa066deb",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxRightPane",
     "pf": "frmRedeemVoucher",

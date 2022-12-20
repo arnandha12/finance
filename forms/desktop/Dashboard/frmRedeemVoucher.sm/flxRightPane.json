@@ -38,7 +38,8 @@
         "imgBg",
         "flxVoucherSearch",
         "flxVoucherDetails",
-        "flxOTPSection"
+        "flxOTPSection",
+        "flxPopupVoucherNotfound"
     ],
     "clipbounds": false,
     "containerweight": 100,

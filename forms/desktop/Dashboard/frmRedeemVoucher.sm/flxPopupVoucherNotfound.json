@@ -60,7 +60,7 @@
     "kuid": "a0a4790b7e2d4932a10278323b2693ca",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxVoucherSearch",
+    "parent": "flxRightPane",
     "pf": "frmRedeemVoucher",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

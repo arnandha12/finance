@@ -30,6 +30,26 @@ define([],function(){
       this.view.btnContinue.onClick = function() {
         self.resetUI();
       };
+      this.view.txtSearchUser.onTextChange = function(eventId) {
+        let searchText = eventId.text;
+        if(searchText.length > 1) {
+          let filteredData = retailerList.filter(
+            data => (data.UserId).includes(searchText));
+          kony.print(filteredData);
+          self.view.segUsers.setData(filteredData);
+          if(filteredData.length === 0) {
+            self.view.flxSegmentSearchList.isVisible = false;
+            self.view.flxUserNotFound.isVisible = true;
+          }
+        } else {
+          self.view.segUsers.setData(retailerList);
+        }
+      };
+      this.view.btnSearchAgain.onClick = function(){
+        self.view.flxUserNotFound.isVisible = false;
+        self.view.txtSearchUser.text = "";
+        self.view.segUsers.setData(retailerList);
+      };
     },
     resetUI: function(){
       this.view.flxUserSearch.isVisible = true;

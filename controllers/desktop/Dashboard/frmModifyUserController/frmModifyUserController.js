@@ -1,7 +1,7 @@
 define([],function(){ 
   let retailerList = [];
   let selecteduser = {};
-  let selectedRole = "";
+  let selectedRole = "",selectedStatus = "";
   let modifyUser = {};
   return {
     onPreShow: function() {
@@ -24,6 +24,9 @@ define([],function(){
       };
       this.view.txtEmail.onEndEditing = function() {
         self.validateFields();
+      };
+      this.view.btnMContinue.onClick = function() {
+        self.resetUI();
       };
       this.view.txtSearchUser.onTextChange = function(eventId) {
         let searchText = eventId.text;
@@ -73,19 +76,41 @@ define([],function(){
         self.view.flxSegRole.isVisible = false;
         self.validateFields();
       };
+      this.view.btnStatusSelection.onClick = function() {
+        if(self.view.flxSegStatus.isVisible) {
+          self.view.imgActiveArrow.src = "downarrow1x.png";
+          self.view.flxSegStatus.isVisible = false;  
+        } else {
+          self.view.imgActiveArrow.src = "uparrow1x.png";
+          self.view.flxSegStatus.isVisible = true;
+        }
+      };
+      this.view.segActive.onRowClick = function() {
+        let selectedvalue = self.view.segActive.selectedRowItems[0];
+        kony.print("selectedvalue :: "+JSON.stringify(selectedvalue));
+        selectedStatus = (selectedvalue.lblUserName == "Active") ? "SID_ACTIVE" : "SID_INACTIVE";
+        self.view.lblActiveSelection.text = selectedvalue.lblUserName;
+        self.view.imgActiveArrow.src = "downarrow1x.png";
+        self.view.flxSegStatus.isVisible = false;
+        self.validateFields();
+      };
     },
     onPostShow: function() {
       this.getAllUserList();
     },
     resetUI: function() {
+      this.view.flxUserSearch.isVisible = true;
       this.view.flxUserDetails.isVisible = false;
       this.view.flxAcknowledgement.isVisible = false;
       this.view.flxSegmentSearchList.isVisible = false;
       this.view.flxUserNotFound.isVisible = false;
       this.view.flxModifiedSucess.isVisible = false;
-      this.view.flxUserSearch.isVisible = true;
-      this.view.txtSearchUser.text = "";
+      this.view.flxSegRole.isVisible = false;
+      this.view.flxSegStatus.isVisible = false;
       this.view.txtUserId.setEnabled(false);
+      this.view.txtSearchUser.text = "";
+      this.view.imgArrow.src = "downarrow1x.png";
+      this.view.imgActiveArrow.src = "downarrow1x.png";
     },
     getAllUserList: function() {
       let param = {
@@ -116,8 +141,9 @@ define([],function(){
       this.view.txtPhoneNo.text = data.PhoneNo;
       this.view.txtUserId.text = data.UserId;
       this.view.lblRoleSelection.text = data.Role;
-      this.view.lblActiveSelection.text = (data.Status === "SID_ACTIVE")?"Active":"Unactive";
+      this.view.lblActiveSelection.text = (data.Status === "SID_ACTIVE")?"Active":"Inactive";
       selectedRole = data.Role;
+      selectedStatus = data.Status;
     },
     validateFields: function() {
       var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
@@ -129,12 +155,13 @@ define([],function(){
       let userid = this.view.txtUserId.text;
       if(username.length >= 3 && phone.length >= 8 && phone.match(phoneformat)
          && email.match(mailformat) && userid.length >= 3 
-         && selectedRole !== "") {
+         && selectedRole !== "" && selectedStatus !== "") {
         modifyUser.userid = userid.trim();
         modifyUser.phoneno = phone.trim();
         modifyUser.emailid = email.trim();
         modifyUser.username = username.trim();
         modifyUser.role = selectedRole;
+        modifyUser.status = selectedStatus;
         //TODO : Change based on login
         modifyUser.retailerid = "1";
         modifyUser.retailername = "samsung";
@@ -151,8 +178,8 @@ define([],function(){
       retailerManager.modifyUser(modifyUser,this.modifyUserSucess,this.modifyUserError);
     },
     modifyUserSucess: function(sucess) {
-      this.view.flxUserModified.isVisible = true;
       kony.application.dismissLoadingScreen();
+      this.view.flxModifiedSucess.isVisible = true;
     },
     modifyUserError: function(error) {
       kony.application.dismissLoadingScreen();

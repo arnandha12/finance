@@ -35,7 +35,7 @@
     ],
     "_height_": {
         "type": "string",
-        "value": "95.53%"
+        "value": "92%"
     },
     "_indicator_": "none",
     "_left_": {
@@ -57,7 +57,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "11dp"
+        "value": "25dp"
     },
     "_width_": {
         "type": "string",

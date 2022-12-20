@@ -49,7 +49,7 @@
     "id": "flxVoucherDetails",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "hffbf9761d99489bafcd42d574f5a37b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

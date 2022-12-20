@@ -1,1 +1,1 @@
-{"table":"Retailer","db":"RetailerCustomer","verbs":"true"}
+{"table":"Retailer","db":"RetailerCustomer","verbs":"true"},{"table":"voucher","db":"VoucherObject","verbs":"true"}

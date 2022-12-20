@@ -215,6 +215,14 @@ return kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule(
 };
 
 /**
+* returns VoucherManager object 
+* @returns {object} value gives VoucherManager object 
+*/
+ApplicationManager.prototype.getVoucherManager = function() {		
+return kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule('VoucherManager').businessController;
+};   
+
+/**
 * returns CampaignManagementManager object 
 * @returns {object} value gives AuthManager object 
 */

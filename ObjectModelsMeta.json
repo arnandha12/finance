@@ -11,9 +11,21 @@
                     "objectETag": "36485d76-4fe5-4a04-bdc9-3d9bdaaf4d8c"
                 }
             ]
+        },
+        {
+            "serviceId": "d1528ad8-2af5-4060-9464-b28ed16655eb",
+            "serviceName": "VoucherObject",
+            "serviceETag": "741cdfef-21c0-49a2-8e5f-ba18160aac4e",
+            "objects": [
+                {
+                    "objectId": "1423",
+                    "objectName": "voucher",
+                    "objectETag": "769b40ac-544d-48af-9fe8-631f24232ba1"
+                }
+            ]
         }
     ],
     "appInfo": {
-        "serviceDocEtag": "000001852BCBD5E8"
+        "serviceDocEtag": "000001852BFE1530"
     }
 }

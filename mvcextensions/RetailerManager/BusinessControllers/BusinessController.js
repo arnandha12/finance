@@ -21,6 +21,8 @@ define([], function () {
         } else {
           successCallback(data);
         }
+      } else {
+         failureCallback(data);
       }
     } 
     function successCallback(resSucess){
@@ -42,6 +44,8 @@ define([], function () {
         } else {
           successCallback(data);
         }
+      } else {
+         failureCallback(data);
       }
     } 
     function successCallback(resSucess){
@@ -63,6 +67,8 @@ define([], function () {
         } else {
           successCallback(data);
         }
+      } else {
+         failureCallback(data);
       }
     } 
     function successCallback(resSucess){

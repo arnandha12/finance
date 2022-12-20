@@ -5,5 +5,12 @@
         "type": "objectsvcs",
         "objectname": "Retailer",
         "objectid": "1303"
+    },
+    "VoucherObject_voucher": {
+        "servicename": "VoucherObject",
+        "serviceid": "d1528ad8-2af5-4060-9464-b28ed16655eb",
+        "type": "objectsvcs",
+        "objectname": "voucher",
+        "objectid": "1423"
     }
 }

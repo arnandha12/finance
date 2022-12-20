@@ -36,7 +36,8 @@
     "canUpdateUI": true,
     "children": [
         "lblActiveSelection",
-        "imgActiveArrow"
+        "imgActiveArrow",
+        "btnStatusSelection"
     ],
     "clipbounds": false,
     "containerweight": 100,
