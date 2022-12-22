@@ -18,7 +18,7 @@ define([],function(){
         let searchText = eventId.text;
         if(searchText.length > 1) {
           let filteredData = voucherList.filter(
-            data => (data.voucherCode).includes(searchText));
+            data => ((data.vouchercode).toLowerCase()).includes(searchText.toLowerCase()));
           kony.print(filteredData);
           self.view.segVouchers.setData(filteredData);
           if(filteredData.length === 0) {
@@ -34,7 +34,7 @@ define([],function(){
         kony.print(eventId.selectedRowItems[0]);
         selectedVoucher = eventId.selectedRowItems[0];
         self.view.flxSegmentSearchList.isVisible = false;
-        self.mapUserDetails(selectedVoucher);
+        self.getVoucherDetails(selectedVoucher);
       };
       this.view.btnSendOtp.onClick = function(event) {
         if (event.text === "Send OTP") {
@@ -79,10 +79,30 @@ define([],function(){
       this.view.btnRedeemVoucher.skin = "";
     },
     onPostShow: function() {
-      //this.getAllVoucherList();
-      this.tempGtAll();
+      this.getAllVoucherList();
+      //this.tempGtAll();
     },
-    mapUserDetails: function() {
+    mapUserDetails: function(voucherdetails) {
+      this.view.lblVoucherID.text = voucherdetails.voucherCode;
+      this.view.lblGenerateDateValue.text = voucherdetails.createdts; 
+      this.view.lblExpiryDateValue.text = "";
+      this.view.txtUApplicantName.text = "";
+      this.view.txtPhone.text = voucherdetails.mobile;
+      this.view.txtApplicantID.text = voucherdetails.applicationID;
+      this.view.txtApplicantAddress.text = "";
+      this.view.txtMerchnatt24CustId.text = "";
+      this.view.txtLoanAmount.text = voucherdetails.offerAmount;
+      this.view.txtEmi.text = voucherdetails.tenorCore;
+      this.view.txtTenor.text = voucherdetails.tenor;
+      
+      this.view.txtUApplicantName.setEnabled(false);
+      this.view.txtPhone.setEnabled(false);
+      this.view.txtApplicantID.setEnabled(false);
+      this.view.txtApplicantAddress.setEnabled(false);
+      this.view.txtMerchnatt24CustId.setEnabled(false);
+      this.view.txtLoanAmount.setEnabled(false);
+      this.view.txtEmi.setEnabled(false);
+      this.view.txtTenor.setEnabled(false);
       this.view.flxVoucherDetails.isVisible = true;
     },
     tempGtAll: function() {
@@ -98,25 +118,43 @@ define([],function(){
     },
     getAllVoucherList: function() {
       let param = {
-        "retailerid": "1"
+        "retailerid":"101608"
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
       var voucherManager = applicationManager.getVoucherManager();
       voucherManager.getVoucherList(param,this.getListSucess,this.getListError);
     },
-    getListSucess: function(success) {
+    getListSucess: function(response) {
       kony.application.dismissLoadingScreen();
       this.view.txtSearchVoucher.setEnabled(true);
       this.view.segVouchers.widgetDataMap = {
         lblUserName: "voucherCode"
       };
-      this.view.segVouchers.setData(response.voucher);
-      voucherList = response.voucher;
+      this.view.segVouchers.setData(response.records);
+      voucherList = response.records;
     },
     getListError: function(error) {
       kony.application.dismissLoadingScreen();
       this.view.txtSearchVoucher.setEnabled(false);
       this.view.flxPopupVoucherNotfound.isVisible = true;
+    },
+    getVoucherDetails: function(voucher) {
+      let param = {
+        "voucherid": voucher.voucherCode,
+        "code": "CODE"
+      };
+      kony.application.showLoadingScreen("", "Loading", "", "", "", "");
+      var voucherManager = applicationManager.getVoucherManager();
+      voucherManager.getVoucherDetails(param,this.getVoucherSucess,this.getVoucherError);
+    },
+    getVoucherSucess: function(response) {
+      kony.application.dismissLoadingScreen();
+      alert(JSON.stringify(response));
+      this.mapUserDetails(response.records[0]);
+    },
+    getVoucherError: function(error) {
+      kony.application.dismissLoadingScreen();
+      alert(JSON.stringify(error));
     }
   };
 });
