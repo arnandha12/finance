@@ -11,8 +11,8 @@
         null
     ],
     "_height_": {
-        "type": "string",
-        "value": "40dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -105,6 +105,16 @@
     "seconds": 0,
     "selectdate": "//2022",
     "startDay": 0,
+    "startdate": [
+        1,
+        1,
+        2001
+    ],
+    "validstartdate": [
+        1,
+        1,
+        2001
+    ],
     "viewtype": "default",
     "wType": "Calendar",
     "widgetalignment": 5,

@@ -55,12 +55,14 @@ define([],function(){
         self.view.btnRedeemVoucher.setEnabled(true);
         self.view.btnSendOtp.isVisible = false;
         self.view.btnRedeemVoucher.skin = "sknbtn2c3d73Rounded18px";
+        self.view.btnRedeemVoucher.left = "39%";
       };
       this.view.btnRedeemVoucher.onClick = function() {
-        self.view.flxAcknowledgementPopup.isVisible = true;
+        self.reedemVoucher();
       };
       this.view.btnContinue.onClick = function() {
         self.resetUI();
+        self.view.segVouchers.setData(voucherList);
       };
     },
     resetUI: function() {
@@ -76,21 +78,26 @@ define([],function(){
       this.view.txtSearchVoucher.setEnabled(true);
       this.view.txtSearchVoucher.text = "";
       this.view.btnRedeemVoucher.setEnabled(false);
-      this.view.btnRedeemVoucher.skin = "";
+      this.view.btnRedeemVoucher.skin = "sknbtn898A8DRounded";
+      this.view.btnRedeemVoucher.left = "55%";
     },
     onPostShow: function() {
       this.getAllVoucherList();
       //this.tempGtAll();
     },
     mapUserDetails: function(voucherdetails) {
+      let createddate = "";
+      if(voucherdetails.createdts) {
+        createddate = (voucherdetails.createdts).split(" ");
+      }
       this.view.lblVoucherID.text = voucherdetails.voucherCode;
-      this.view.lblGenerateDateValue.text = voucherdetails.createdts; 
+      this.view.lblGenerateDateValue.text = createddate[0]; 
       this.view.lblExpiryDateValue.text = "";
       this.view.txtUApplicantName.text = "";
       this.view.txtPhone.text = voucherdetails.mobile;
       this.view.txtApplicantID.text = voucherdetails.applicationID;
       this.view.txtApplicantAddress.text = "";
-      this.view.txtMerchnatt24CustId.text = "";
+      this.view.txtMerchnatt24CustId.text = voucherdetails.retailerID;
       this.view.txtLoanAmount.text = voucherdetails.offerAmount;
       this.view.txtEmi.text = voucherdetails.tenorCore;
       this.view.txtTenor.text = voucherdetails.tenor;
@@ -155,6 +162,25 @@ define([],function(){
     getVoucherError: function(error) {
       kony.application.dismissLoadingScreen();
       alert(JSON.stringify(error));
+    },
+    reedemVoucher: function() {
+      let voucherCode = this.view.lblVoucherID.text;
+      let param = {
+        "vouchercode": voucherCode,
+        "voucherid": "1",
+        "status": "REDEEMED"
+      };
+      kony.application.showLoadingScreen("", "Loading", "", "", "", "");
+      var voucherManager = applicationManager.getVoucherManager();
+      voucherManager.redeemVoucher(param,this.reedemVoucherSucess,this.reedemVoucherError);
+    },
+    reedemVoucherSucess: function(response) {
+      kony.application.dismissLoadingScreen();
+      self.view.flxAcknowledgementPopup.isVisible = true;
+    },
+    reedemVoucherError: function(error) {
+      kony.application.dismissLoadingScreen();
+      alert(error.dbpErrMsg);
     }
   };
 });

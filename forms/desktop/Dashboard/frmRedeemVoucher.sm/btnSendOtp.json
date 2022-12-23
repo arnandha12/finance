@@ -41,7 +41,7 @@
     "id": "btnSendOtp",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ia040973453c45629c4987a7890fa2e9",
     "name": "kony.ui.Button",
     "parent": "flxBtnSec",

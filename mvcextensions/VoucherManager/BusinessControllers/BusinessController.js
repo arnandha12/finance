@@ -56,5 +56,28 @@ define([], function () {
       errorCB(resError);
     }
   };
+  VoucherManager.prototype.redeemVoucher = function(params,sucessCB,errorCB) {
+    var self = this;
+    var userRepo =  kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("voucher");
+    userRepo.customVerb('redeemVoucher', params, serviceCompletionCallback);
+    function serviceCompletionCallback(status, data, error) {
+      //alert("status"+status+" data "+data+" error "+error);
+      if(data.opstatus === 0){
+        if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
+          failureCallback(data);
+        } else {
+          successCallback(data);
+        }
+      } else {
+        failureCallback(data);
+      }
+    } 
+    function successCallback(resSucess){
+      sucessCB(resSucess);
+    }
+    function failureCallback(resError){
+      errorCB(resError);
+    }
+  };
   return VoucherManager;
 });
