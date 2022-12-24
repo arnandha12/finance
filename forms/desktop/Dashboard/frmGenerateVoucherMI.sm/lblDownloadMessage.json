@@ -18,7 +18,7 @@
         0
     ],
     "_skin_": "s5debec91f1e42aa9de46998ef58b32e",
-    "_text_": "25 records are ready to download",
+    "_text_": "%N% records are ready to download",
     "_width_": {
         "type": "string",
         "value": "30%"
