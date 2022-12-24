@@ -5,6 +5,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         1,
         1,
@@ -17,11 +21,15 @@
         0,
         0
     ],
-    "_skin_": "sb5c5d53c90c4942994c354984b04b31",
-    "_text_": "Voucher Status",
+    "_skin_": "s4b9cb60e1f54557af61ee3de4c222ed",
+    "_text_": "Wrong OTP Entered.",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "300px"
     },
     "_wrapping_": 2,
     "android": {
@@ -31,17 +39,9 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lblVoucherSts",
+    "contentalignment": 4,
+    "id": "lblError1",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,10 +55,10 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h3353ba929214103b6b4f5882c1e39aa",
+    "kuid": "i322da6400aa4ff5b919ddbebffdbc8c",
     "name": "kony.ui.Label",
-    "parent": "flxVoucherStatus",
-    "pf": "frmGenerateVoucherMI",
+    "parent": "flxError",
+    "pf": "frmRedeemVoucher",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "tooltip": "",

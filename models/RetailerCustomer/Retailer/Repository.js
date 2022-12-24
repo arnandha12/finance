@@ -20,6 +20,11 @@ define([], function(){
 		return RetailerRepository.prototype.customVerb('modifyUser', params, onCompletion);
 	};
 
+	//For Operation 'verifyMFA' with service id 'verifyOTP6897'
+	RetailerRepository.prototype.verifyMFA = function(params, onCompletion){
+		return RetailerRepository.prototype.customVerb('verifyMFA', params, onCompletion);
+	};
+
 	//For Operation 'getAllUser' with service id 'getAllUsers5565'
 	RetailerRepository.prototype.getAllUser = function(params, onCompletion){
 		return RetailerRepository.prototype.customVerb('getAllUser', params, onCompletion);
@@ -28,6 +33,11 @@ define([], function(){
 	//For Operation 'createUser' with service id 'CreateNewUser9107'
 	RetailerRepository.prototype.createUser = function(params, onCompletion){
 		return RetailerRepository.prototype.customVerb('createUser', params, onCompletion);
+	};
+
+	//For Operation 'requestMFA' with service id 'RequestMFA1401'
+	RetailerRepository.prototype.requestMFA = function(params, onCompletion){
+		return RetailerRepository.prototype.customVerb('requestMFA', params, onCompletion);
 	};
 
 	//For Operation 'resendPassword' with service id 'ResendPassword1237'

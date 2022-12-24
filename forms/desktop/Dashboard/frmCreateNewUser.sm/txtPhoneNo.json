@@ -50,6 +50,7 @@
     "isvisible": true,
     "keyboardtype": "A",
     "kuid": "aa103d99e69d4c81ae05eea837cc4bba",
+    "maxtextlength": 10,
     "mode": "A",
     "name": "kony.ui.TextBox2",
     "parent": "flxPhoneGroup",

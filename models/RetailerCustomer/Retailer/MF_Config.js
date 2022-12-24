@@ -14,6 +14,11 @@ define([], function() {
 		"phoneno": "phoneno",
 		"emailid": "emailid",
 		"username": "username",
+		"securityKey": "securityKey",
+		"Otp": "Otp",
+		"dbpErrCode": "dbpErrCode",
+		"dbpErrMsg": "dbpErrMsg",
+		"isOtpVerified": "isOtpVerified",
 	};
 
 	Object.freeze(mappings);
@@ -30,6 +35,11 @@ define([], function() {
 		"phoneno": "string",
 		"emailid": "string",
 		"username": "string",
+		"securityKey": "string",
+		"Otp": "string",
+		"dbpErrCode": "string",
+		"dbpErrMsg": "string",
+		"isOtpVerified": "string",
 	}
 
 	Object.freeze(typings);

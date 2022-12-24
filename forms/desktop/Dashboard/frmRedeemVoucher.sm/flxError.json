@@ -2,11 +2,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "70px"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "56px"
     },
     "_margin_": [
         0,
@@ -25,28 +25,29 @@
     "_skin_": "sa6c95d6a2de43559d647c787411cd1e",
     "_top_": {
         "type": "string",
-        "value": "35px"
+        "value": "10px"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "354px"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "btnVerify",
-        "btnBack"
+        "lblError1",
+        "lblError2",
+        "lblError3"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxAction",
+    "id": "flxError",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "dd501b96f6054fc0adf82ff6b798fffa",
-    "layouttype": 2,
+    "kuid": "a20c375a5ecf4a8bbb00a246e628ba7a",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxRight",
     "pf": "frmRedeemVoucher",
@@ -56,6 +57,5 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

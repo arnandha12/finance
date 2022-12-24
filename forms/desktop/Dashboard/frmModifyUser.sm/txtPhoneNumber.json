@@ -48,6 +48,7 @@
     "isvisible": false,
     "keyboardtype": "A",
     "kuid": "a2924f5df90b499eb11e37032377b2ab",
+    "maxtextlength": "",
     "mode": "A",
     "name": "kony.ui.TextBox2",
     "parent": "flxPhoneNumber",

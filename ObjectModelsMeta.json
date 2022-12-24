@@ -3,12 +3,12 @@
         {
             "serviceId": "a4ec61c9-951f-4dbf-accd-1df20651549d",
             "serviceName": "RetailerCustomer",
-            "serviceETag": "9637feee-317c-47ad-8ae7-a01e22b8a7a0",
+            "serviceETag": "c38d7835-3617-4ec7-b2d7-66e6eb1ba8c9",
             "objects": [
                 {
                     "objectId": "1303",
                     "objectName": "Retailer",
-                    "objectETag": "36485d76-4fe5-4a04-bdc9-3d9bdaaf4d8c"
+                    "objectETag": "fb039514-4f0b-4d27-84a7-32969250a3b0"
                 }
             ]
         },
@@ -26,6 +26,6 @@
         }
     ],
     "appInfo": {
-        "serviceDocEtag": "000001853EC3EA28"
+        "serviceDocEtag": "00000185426DD788"
     }
 }

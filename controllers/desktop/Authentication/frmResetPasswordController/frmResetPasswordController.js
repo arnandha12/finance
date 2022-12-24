@@ -44,7 +44,7 @@ define([], function () {
       resetPasswordSuccess: function(success){
         kony.application.dismissLoadingScreen();
         alert("Password is successfully reset");
-        var x = new kony.mvc.Navigation("frmDashBoard");
+        var x = new kony.mvc.Navigation("frmOtpValidation");
       	x.navigate();
       },
       resetPasswordError: function(error){

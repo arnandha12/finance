@@ -64,6 +64,31 @@ define([], function() {
             context["metadata"] = (objectMetadata ? objectMetadata["username"] : null);
             state['username'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
+        securityKey: function(val, state) {
+            context["field"] = "securityKey";
+            context["metadata"] = (objectMetadata ? objectMetadata["securityKey"] : null);
+            state['securityKey'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        Otp: function(val, state) {
+            context["field"] = "Otp";
+            context["metadata"] = (objectMetadata ? objectMetadata["Otp"] : null);
+            state['Otp'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        dbpErrCode: function(val, state) {
+            context["field"] = "dbpErrCode";
+            context["metadata"] = (objectMetadata ? objectMetadata["dbpErrCode"] : null);
+            state['dbpErrCode'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        dbpErrMsg: function(val, state) {
+            context["field"] = "dbpErrMsg";
+            context["metadata"] = (objectMetadata ? objectMetadata["dbpErrMsg"] : null);
+            state['dbpErrMsg'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        isOtpVerified: function(val, state) {
+            context["field"] = "isOtpVerified";
+            context["metadata"] = (objectMetadata ? objectMetadata["isOtpVerified"] : null);
+            state['isOtpVerified'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
     };
 
     //Create the Model Class
@@ -154,6 +179,46 @@ define([], function() {
         privateState.username = defaultValues ?
             (defaultValues["username"] ?
                 kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["username"], context) :
+                null) :
+            null;
+
+        context["field"] = "securityKey";
+        context["metadata"] = (objectMetadata ? objectMetadata["securityKey"] : null);
+        privateState.securityKey = defaultValues ?
+            (defaultValues["securityKey"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["securityKey"], context) :
+                null) :
+            null;
+
+        context["field"] = "Otp";
+        context["metadata"] = (objectMetadata ? objectMetadata["Otp"] : null);
+        privateState.Otp = defaultValues ?
+            (defaultValues["Otp"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["Otp"], context) :
+                null) :
+            null;
+
+        context["field"] = "dbpErrCode";
+        context["metadata"] = (objectMetadata ? objectMetadata["dbpErrCode"] : null);
+        privateState.dbpErrCode = defaultValues ?
+            (defaultValues["dbpErrCode"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["dbpErrCode"], context) :
+                null) :
+            null;
+
+        context["field"] = "dbpErrMsg";
+        context["metadata"] = (objectMetadata ? objectMetadata["dbpErrMsg"] : null);
+        privateState.dbpErrMsg = defaultValues ?
+            (defaultValues["dbpErrMsg"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["dbpErrMsg"], context) :
+                null) :
+            null;
+
+        context["field"] = "isOtpVerified";
+        context["metadata"] = (objectMetadata ? objectMetadata["isOtpVerified"] : null);
+        privateState.isOtpVerified = defaultValues ?
+            (defaultValues["isOtpVerified"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["isOtpVerified"], context) :
                 null) :
             null;
 
@@ -284,6 +349,61 @@ define([], function() {
                 },
                 enumerable: true,
             },
+            "securityKey": {
+                get: function() {
+                    context["field"] = "securityKey";
+                    context["metadata"] = (objectMetadata ? objectMetadata["securityKey"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.securityKey, context);
+                },
+                set: function(val) {
+                    setterFunctions['securityKey'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "Otp": {
+                get: function() {
+                    context["field"] = "Otp";
+                    context["metadata"] = (objectMetadata ? objectMetadata["Otp"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.Otp, context);
+                },
+                set: function(val) {
+                    setterFunctions['Otp'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "dbpErrCode": {
+                get: function() {
+                    context["field"] = "dbpErrCode";
+                    context["metadata"] = (objectMetadata ? objectMetadata["dbpErrCode"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.dbpErrCode, context);
+                },
+                set: function(val) {
+                    setterFunctions['dbpErrCode'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "dbpErrMsg": {
+                get: function() {
+                    context["field"] = "dbpErrMsg";
+                    context["metadata"] = (objectMetadata ? objectMetadata["dbpErrMsg"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.dbpErrMsg, context);
+                },
+                set: function(val) {
+                    setterFunctions['dbpErrMsg'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "isOtpVerified": {
+                get: function() {
+                    context["field"] = "isOtpVerified";
+                    context["metadata"] = (objectMetadata ? objectMetadata["isOtpVerified"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.isOtpVerified, context);
+                },
+                set: function(val) {
+                    setterFunctions['isOtpVerified'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
         });
 
         //converts model object to json object.
@@ -304,6 +424,11 @@ define([], function() {
             privateState.phoneno = value ? (value["phoneno"] ? value["phoneno"] : null) : null;
             privateState.emailid = value ? (value["emailid"] ? value["emailid"] : null) : null;
             privateState.username = value ? (value["username"] ? value["username"] : null) : null;
+            privateState.securityKey = value ? (value["securityKey"] ? value["securityKey"] : null) : null;
+            privateState.Otp = value ? (value["Otp"] ? value["Otp"] : null) : null;
+            privateState.dbpErrCode = value ? (value["dbpErrCode"] ? value["dbpErrCode"] : null) : null;
+            privateState.dbpErrMsg = value ? (value["dbpErrMsg"] ? value["dbpErrMsg"] : null) : null;
+            privateState.isOtpVerified = value ? (value["isOtpVerified"] ? value["isOtpVerified"] : null) : null;
         };
     }
 
@@ -342,6 +467,11 @@ define([], function() {
         return Retailer.customVerb('modifyUser', params, onCompletion);
      };
 
+    //For Operation 'verifyMFA' with service id 'verifyOTP6897'
+     Retailer.verifyMFA = function(params, onCompletion){
+        return Retailer.customVerb('verifyMFA', params, onCompletion);
+     };
+
     //For Operation 'getAllUser' with service id 'getAllUsers5565'
      Retailer.getAllUser = function(params, onCompletion){
         return Retailer.customVerb('getAllUser', params, onCompletion);
@@ -350,6 +480,11 @@ define([], function() {
     //For Operation 'createUser' with service id 'CreateNewUser9107'
      Retailer.createUser = function(params, onCompletion){
         return Retailer.customVerb('createUser', params, onCompletion);
+     };
+
+    //For Operation 'requestMFA' with service id 'RequestMFA1401'
+     Retailer.requestMFA = function(params, onCompletion){
+        return Retailer.customVerb('requestMFA', params, onCompletion);
      };
 
     //For Operation 'resendPassword' with service id 'ResendPassword1237'

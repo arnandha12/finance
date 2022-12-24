@@ -54,7 +54,7 @@
         }
     },
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "h0f7dba33bb94271a50ca7040469bee1",
     "name": "kony.ui.Label",
     "parent": "flxpasswordbox",
