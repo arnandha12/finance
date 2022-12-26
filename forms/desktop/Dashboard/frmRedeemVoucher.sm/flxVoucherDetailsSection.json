@@ -37,6 +37,7 @@
     "children": [
         "flxLine1",
         "flxLine2",
+        "flxLine21",
         "flxLine3",
         "flxLine4",
         "flxBtnSec"

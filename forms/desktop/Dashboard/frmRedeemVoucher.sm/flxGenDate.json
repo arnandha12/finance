@@ -44,7 +44,7 @@
     "id": "flxGenDate",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "j5c4d2ea7fdf4528b9a68c5605d12c7e",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

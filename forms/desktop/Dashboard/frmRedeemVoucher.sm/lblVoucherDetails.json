@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "30px"
+        "value": "50px"
     },
     "_margin_": [
         1,
@@ -21,11 +21,11 @@
         0,
         0
     ],
-    "_skin_": "sfdba1805b2a4d1d8eb6028f75212c92",
-    "_text_": "Voucher Details",
+    "_skin_": "sb958ff71ba748d48af4ec251e8341e9",
+    "_text_": "Voucher Detail",
     "_top_": {
         "type": "string",
-        "value": "60px"
+        "value": "100px"
     },
     "_width_": {
         "type": "ref",

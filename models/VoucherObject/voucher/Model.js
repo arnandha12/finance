@@ -34,6 +34,26 @@ define([], function() {
             context["metadata"] = (objectMetadata ? objectMetadata["status"] : null);
             state['status'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
         },
+        startdate: function(val, state) {
+            context["field"] = "startdate";
+            context["metadata"] = (objectMetadata ? objectMetadata["startdate"] : null);
+            state['startdate'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        enddate: function(val, state) {
+            context["field"] = "enddate";
+            context["metadata"] = (objectMetadata ? objectMetadata["enddate"] : null);
+            state['enddate'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        customerid: function(val, state) {
+            context["field"] = "customerid";
+            context["metadata"] = (objectMetadata ? objectMetadata["customerid"] : null);
+            state['customerid'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
+        mobile: function(val, state) {
+            context["field"] = "mobile";
+            context["metadata"] = (objectMetadata ? objectMetadata["mobile"] : null);
+            state['mobile'] = kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, val, context);
+        },
     };
 
     //Create the Model Class
@@ -76,6 +96,38 @@ define([], function() {
         privateState.status = defaultValues ?
             (defaultValues["status"] ?
                 kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["status"], context) :
+                null) :
+            null;
+
+        context["field"] = "startdate";
+        context["metadata"] = (objectMetadata ? objectMetadata["startdate"] : null);
+        privateState.startdate = defaultValues ?
+            (defaultValues["startdate"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["startdate"], context) :
+                null) :
+            null;
+
+        context["field"] = "enddate";
+        context["metadata"] = (objectMetadata ? objectMetadata["enddate"] : null);
+        privateState.enddate = defaultValues ?
+            (defaultValues["enddate"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["enddate"], context) :
+                null) :
+            null;
+
+        context["field"] = "customerid";
+        context["metadata"] = (objectMetadata ? objectMetadata["customerid"] : null);
+        privateState.customerid = defaultValues ?
+            (defaultValues["customerid"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["customerid"], context) :
+                null) :
+            null;
+
+        context["field"] = "mobile";
+        context["metadata"] = (objectMetadata ? objectMetadata["mobile"] : null);
+        privateState.mobile = defaultValues ?
+            (defaultValues["mobile"] ?
+                kony.mvc.util.ProcessorUtils.applyFunction(preProcessorCallback, defaultValues["mobile"], context) :
                 null) :
             null;
 
@@ -140,6 +192,50 @@ define([], function() {
                 },
                 enumerable: true,
             },
+            "startdate": {
+                get: function() {
+                    context["field"] = "startdate";
+                    context["metadata"] = (objectMetadata ? objectMetadata["startdate"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.startdate, context);
+                },
+                set: function(val) {
+                    setterFunctions['startdate'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "enddate": {
+                get: function() {
+                    context["field"] = "enddate";
+                    context["metadata"] = (objectMetadata ? objectMetadata["enddate"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.enddate, context);
+                },
+                set: function(val) {
+                    setterFunctions['enddate'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "customerid": {
+                get: function() {
+                    context["field"] = "customerid";
+                    context["metadata"] = (objectMetadata ? objectMetadata["customerid"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.customerid, context);
+                },
+                set: function(val) {
+                    setterFunctions['customerid'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
+            "mobile": {
+                get: function() {
+                    context["field"] = "mobile";
+                    context["metadata"] = (objectMetadata ? objectMetadata["mobile"] : null);
+                    return kony.mvc.util.ProcessorUtils.applyFunction(postProcessorCallback, privateState.mobile, context);
+                },
+                set: function(val) {
+                    setterFunctions['mobile'].call(this, val, privateState);
+                },
+                enumerable: true,
+            },
         });
 
         //converts model object to json object.
@@ -154,6 +250,10 @@ define([], function() {
             privateState.code = value ? (value["code"] ? value["code"] : null) : null;
             privateState.retailerid = value ? (value["retailerid"] ? value["retailerid"] : null) : null;
             privateState.status = value ? (value["status"] ? value["status"] : null) : null;
+            privateState.startdate = value ? (value["startdate"] ? value["startdate"] : null) : null;
+            privateState.enddate = value ? (value["enddate"] ? value["enddate"] : null) : null;
+            privateState.customerid = value ? (value["customerid"] ? value["customerid"] : null) : null;
+            privateState.mobile = value ? (value["mobile"] ? value["mobile"] : null) : null;
         };
     }
 
@@ -185,6 +285,16 @@ define([], function() {
     //For Operation 'getVoucherList' with service id 'dbxdb_sp_get_voucher_ids_by_retailerID9307'
      voucher.getVoucherList = function(params, onCompletion){
         return voucher.customVerb('getVoucherList', params, onCompletion);
+     };
+
+    //For Operation 'generateVoucher' with service id 'GenerateVoucher2560'
+     voucher.generateVoucher = function(params, onCompletion){
+        return voucher.customVerb('generateVoucher', params, onCompletion);
+     };
+
+    //For Operation 'getVoucherMI' with service id 'dbxdb_sp_get_vouchermi4299'
+     voucher.getVoucherMI = function(params, onCompletion){
+        return voucher.customVerb('getVoucherMI', params, onCompletion);
      };
 
     //For Operation 'getVoucherDetails' with service id 'GetVoucherByCodeOrNumber7141'

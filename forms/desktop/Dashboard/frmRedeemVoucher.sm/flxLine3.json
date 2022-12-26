@@ -46,7 +46,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "d2c584e1ece1441e9c621777a135d194",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxVoucherDetailsSection",
     "pf": "frmRedeemVoucher",

@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -44,7 +44,7 @@
     "id": "flxMerchnatt24CustId",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "j3c2a0aff587463cadf7deac49e328d7",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

@@ -44,7 +44,7 @@
     "id": "flxExpDate",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "jcd4b8c3ec5b4204bae59c45dabbefe4",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

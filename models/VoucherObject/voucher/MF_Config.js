@@ -8,6 +8,10 @@ define([], function() {
 		"code": "code",
 		"retailerid": "retailerid",
 		"status": "status",
+		"startdate": "startdate",
+		"enddate": "enddate",
+		"customerid": "customerid",
+		"mobile": "mobile",
 	};
 
 	Object.freeze(mappings);
@@ -18,6 +22,10 @@ define([], function() {
 		"code": "string",
 		"retailerid": "string",
 		"status": "string",
+		"startdate": "string",
+		"enddate": "string",
+		"customerid": "string",
+		"mobile": "string",
 	}
 
 	Object.freeze(typings);

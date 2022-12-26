@@ -15,6 +15,16 @@ define([], function(){
 		return voucherRepository.prototype.customVerb('getVoucherList', params, onCompletion);
 	};
 
+	//For Operation 'generateVoucher' with service id 'GenerateVoucher2560'
+	voucherRepository.prototype.generateVoucher = function(params, onCompletion){
+		return voucherRepository.prototype.customVerb('generateVoucher', params, onCompletion);
+	};
+
+	//For Operation 'getVoucherMI' with service id 'dbxdb_sp_get_vouchermi4299'
+	voucherRepository.prototype.getVoucherMI = function(params, onCompletion){
+		return voucherRepository.prototype.customVerb('getVoucherMI', params, onCompletion);
+	};
+
 	//For Operation 'getVoucherDetails' with service id 'GetVoucherByCodeOrNumber7141'
 	voucherRepository.prototype.getVoucherDetails = function(params, onCompletion){
 		return voucherRepository.prototype.customVerb('getVoucherDetails', params, onCompletion);

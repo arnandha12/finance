@@ -62,10 +62,10 @@ define([],function(){
       let username = this.view.txtUsername.text;
       let phone = this.view.txtPhoneNo.text;
       let email = this.view.txtEmail.text;
-      let userid = this.view.txtUserId.text;
+      //let userid = this.view.txtUserId.text;
+      //&& userid.length >= 3
       if(username.length >= 3 && phone.length >= 8 && phone.match(phoneformat)
-         && email.match(mailformat) && userid.length >= 3 
-         && selectedRole !== "") {
+         && email.match(mailformat) && selectedRole !== "") {
         createUser.userid = userid.trim();
         createUser.phoneno = phone.trim();
         createUser.emailid = email.trim();
