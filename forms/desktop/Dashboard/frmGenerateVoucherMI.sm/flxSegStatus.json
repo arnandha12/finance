@@ -47,7 +47,7 @@
     "id": "flxSegStatus",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "e82908e859db418db17a08a10121b8e0",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

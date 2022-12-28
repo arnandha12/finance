@@ -16,6 +16,9 @@ define([],function(){
       this.view.txtSearchVoucher.text = "";
       this.view.CalenderStartDate.text = "";
       this.view.CalenderEndDate.text = "";
+      this.view.btnDownloadVoucher.onClick = function() {
+        self.view.brwsExcel.evaluateJavaScript("exportJsonToXLSX()");
+      };
       this.view.btnSelectStatus.onClick = function() {
         if(self.view.flxSegStatus.isVisible) {
           self.view.flxSegStatus.isVisible = false;
