@@ -5,18 +5,6 @@
         {
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "All"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Expired"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Redeemed"
             }
         },
@@ -24,12 +12,6 @@
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Unutilised"
-            }
-        },
-        {
-            "lblUserName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Cancelled"
             }
         }
     ],
@@ -66,7 +48,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "04",
+    "counter": "01",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -100,7 +82,7 @@
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "e1b3b910a3754050a6e54e0a901afc1e",
-    "rowcounter": 4,
+    "rowcounter": 1,
     "rowfocusskin": "s81bee6c05da4ed2a18adb8f7714d88f",
     "rowskin": "s5e5ae4646444f04813b9d2b631deb42",
     "rowtemplate": "Flex0h569df2eddc746",

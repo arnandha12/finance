@@ -15,14 +15,14 @@ define([], function () {
     userRepo.customVerb('createUser', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
       //alert("status"+status+" data "+data+" error "+error);
-      if(data.opstatus === 0){
+      if(data && data.opstatus === 0){
         if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
           failureCallback(data);
         } else {
           successCallback(data);
         }
       } else {
-         failureCallback(data);
+         failureCallback(error);
       }
     } 
     function successCallback(resSucess){
@@ -38,14 +38,14 @@ define([], function () {
     userRepo.customVerb('modifyUser', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
       //alert("status"+status+" data "+data+" error "+error);
-      if(data.opstatus === 0){
+      if(data && data.opstatus === 0){
         if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
           failureCallback(data);
         } else {
           successCallback(data);
         }
       } else {
-         failureCallback(data);
+         failureCallback(error);
       }
     } 
     function successCallback(resSucess){
@@ -61,14 +61,14 @@ define([], function () {
     userRepo.customVerb('getAllUser', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
       //alert("status"+status+" data "+data+" error "+error);
-      if(data.opstatus === 0){
+      if(data && data.opstatus === 0){
         if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
           failureCallback(data);
         } else {
           successCallback(data);
         }
       } else {
-         failureCallback(data);
+         failureCallback(error);
       }
     } 
     function successCallback(resSucess){

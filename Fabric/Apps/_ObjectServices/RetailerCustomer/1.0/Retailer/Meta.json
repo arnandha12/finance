@@ -4,7 +4,13 @@
   "junction" : false,
   "customizable" : false,
   "verbs" : {
-    "resetPassword" : "resetPasswordMapping"
+    "resetPassword" : "resetPasswordMapping",
+    "modifyUser" : "modifyUserMapping",
+    "verifyMFA" : "verifyMFAMapping",
+    "getAllUser" : "getAllUserMapping",
+    "createUser" : "createUserMapping",
+    "requestMFA" : "requestMFAMapping",
+    "resendPassword" : "resendPasswordMapping"
   },
   "entityProperties" : {
     "BatchMode" : "buffer",

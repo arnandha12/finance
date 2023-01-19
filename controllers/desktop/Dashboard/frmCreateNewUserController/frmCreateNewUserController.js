@@ -1,4 +1,4 @@
-define([],function(){ 
+define(['ServiceResponse'],function(ServiceResponse){ 
   let selectedRole = "";
   let createUser = {};
   return {
@@ -66,14 +66,14 @@ define([],function(){
       //&& userid.length >= 3
       if(username.length >= 3 && phone.length >= 8 && phone.match(phoneformat)
          && email.match(mailformat) && selectedRole !== "") {
-        createUser.userid = userid.trim();
+        createUser.userid = "";
         createUser.phoneno = phone.trim();
         createUser.emailid = email.trim();
         createUser.username = username.trim();
         createUser.role = selectedRole;
         //TODO : Change based on login
-        createUser.retailerid = "1";
-        createUser.retailername = "samsung";
+        createUser.retailerid = ServiceResponse.USER_ATTRIBUTES.retailerid;
+        createUser.retailername = ServiceResponse.USER_ATTRIBUTES.retailername;
         this.view.btnCreateUser.setEnabled(true);
         this.view.btnCreateUser.skin = "sknbtn2c3d73Rounded18px";
       } else {

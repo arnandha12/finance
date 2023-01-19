@@ -77,6 +77,22 @@
                 "wType": "Label"
             }
         },
+        "btnLogout": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a20363bb6dc9491ab28383a45a965d51",
+                "srcKUID": "f1cc043314664153957c1a2944583b6e",
+                "wType": "Button"
+            }
+        },
+        "btnRetailerName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f7526d7faddb4833b6f432f3b4c2ff78",
+                "srcKUID": "ea5a03efb10f49eaa84f8622938a7d74",
+                "wType": "Button"
+            }
+        },
         "btnSignup": {
             "__events__": {},
             "__info__": {
@@ -109,11 +125,27 @@
                 "wType": "FlexContainer"
             }
         },
+        "flxLogout": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cde9811d46eb408c9b338638e6320c11",
+                "srcKUID": "b9e40c49f5ae494cbd8d9c6233c4a6be",
+                "wType": "FlexContainer"
+            }
+        },
         "imgHamburger": {
             "__events__": {},
             "__info__": {
                 "kuid": "c2ae482745ba4d75859fec8c795c1692",
                 "srcKUID": "i0b61c7b12d2400d9f94af822a2f9eaf",
+                "wType": "Image"
+            }
+        },
+        "imghamburgerWhite": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g45ee006cd614a6c987de2069074bf50",
+                "srcKUID": "ee29a063437548d0bd77be74d6f38ca5",
                 "wType": "Image"
             }
         }

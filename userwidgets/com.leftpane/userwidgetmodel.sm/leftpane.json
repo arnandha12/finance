@@ -41,6 +41,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "leftpane",
+    "ide_preShow": "AS_FlexContainer_fe6f8e6bfcdb4cd1b438aa29cc6c94a6",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

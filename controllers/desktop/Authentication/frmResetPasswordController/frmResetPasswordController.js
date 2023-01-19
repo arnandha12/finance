@@ -1,4 +1,4 @@
-define([], function () { 
+define(['ServiceResponse'],function(ServiceResponse){ 
   	let validatePasswordFields= {};
     let numericPattern = /[0-9]/g;
     let spcharPattern = /[!@#%]/g;
@@ -33,7 +33,7 @@ define([], function () {
         } else {
           //todo: have map the userid based on login
           var request = {
-            "userid"     : "samsunguser",
+            "userid"     : ServiceResponse.USER_ATTRIBUTES.user_id,
             "resetpassword": password.trim()
           };
           kony.application.showLoadingScreen("", "Loading", "", "", "", "");
@@ -44,7 +44,7 @@ define([], function () {
       resetPasswordSuccess: function(success){
         kony.application.dismissLoadingScreen();
         alert("Password is successfully reset");
-        var x = new kony.mvc.Navigation("frmOtpValidation");
+        var x = new kony.mvc.Navigation("frmLogin");
       	x.navigate();
       },
       resetPasswordError: function(error){

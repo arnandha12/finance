@@ -3,22 +3,42 @@
   "description" : "Murahaba Retailer Portal",
   "version" : "1.0",
   "intSvcs" : [ {
+    "name" : "MurabahaT24JsonServices2",
+    "version" : "1.0",
+    "etag" : "cf571806-d43c-4273-b69a-229d5b75eef9"
+  }, {
     "name" : "RetailerDBService",
     "version" : "1.0",
-    "etag" : "6c458c8b-a509-44c1-ab25-7b12a1bca5f4"
+    "etag" : "87fa7c1d-241e-41fc-bacf-c5d909223a0a"
+  }, {
+    "name" : "RetailerDBService2",
+    "version" : "1.0",
+    "etag" : "7f92aada-56a4-4e8f-b39c-28529cfe2504"
   }, {
     "name" : "RetailerJavaService",
     "version" : "1.0",
-    "etag" : "f3d5e559-f4b9-4724-8309-48463a203d77"
+    "etag" : "4e1e3da4-360b-4492-9f0b-69cce8485f21"
+  }, {
+    "name" : "RetailerJavaService2",
+    "version" : "1.0",
+    "etag" : "2bf308a2-dbfc-4274-9bcd-9120dcbf9348"
   }, {
     "name" : "RetailerLoginAPI",
     "version" : "1.0",
     "etag" : "7e7a88da-942f-4ce1-82b0-a472da7140f7"
+  }, {
+    "name" : "VoucherServices",
+    "version" : "1.0",
+    "etag" : "9dce9701-c414-486e-994a-6193ebc02c22"
   } ],
   "objectSvcs" : [ {
     "name" : "RetailerCustomer",
     "version" : "1.0",
-    "etag" : "98c5b6f8-6e48-4388-b6ff-91f0c649238b"
+    "etag" : "c38d7835-3617-4ec7-b2d7-66e6eb1ba8c9"
+  }, {
+    "name" : "VoucherObject",
+    "version" : "1.0",
+    "etag" : "66deb351-373e-450e-80ca-1db6e31a4a8b"
   } ],
   "identity" : [ "MoraRetailerLogin", "MoraRetailerRepo" ],
   "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"

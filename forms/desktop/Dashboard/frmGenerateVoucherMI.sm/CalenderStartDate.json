@@ -56,7 +56,7 @@
         null
     ],
     "dateeditable": true,
-    "dateformat": "dd/MMM/yyyy",
+    "dateformat": "dd/MM/yyyy",
     "datesGroup": [],
     "datesState": 0,
     "day": null,
@@ -65,15 +65,15 @@
         "calendarIcon": "dropdown2x.png"
     },
     "displayedMonths": [
-        12,
-        2022
+        1,
+        2001
     ],
     "entereddate": [
         null,
         null,
         null
     ],
-    "format": "dd/MMM/yyyy",
+    "format": "dd/MM/yyyy",
     "formatteddate": "",
     "hidedaysheader": false,
     "hidemonthsheader": false,

@@ -7,17 +7,19 @@ define([],function(){
                        "All" : "All"
                       };
   let selectedStatus = "",startDate = "",endDate = "";
+  let voucherData = [];
   return {
     onPreShow: function() {
       var self = this;
       selectedStatus = "";
       startDate = "";
-      this.view.flxSegStatus.isVisible = false;
-      this.view.txtSearchVoucher.text = "";
-      this.view.CalenderStartDate.text = "";
-      this.view.CalenderEndDate.text = "";
+      endDate = "";
+      this.resetUI();
+      this.view.btnGenerateVoucher.onClick = function() {
+        self.getVoucherMI();
+      };
       this.view.btnDownloadVoucher.onClick = function() {
-        self.view.brwsExcel.evaluateJavaScript("exportJsonToXLSX()");
+        self.downloadVoucherData();        
       };
       this.view.btnSelectStatus.onClick = function() {
         if(self.view.flxSegStatus.isVisible) {
@@ -30,20 +32,115 @@ define([],function(){
         kony.print("event :: "+JSON.stringify(eventId.selectedRowItems[0]));
         selectedStatus = voucherStatus[eventId.selectedRowItems[0].lblUserName];
         kony.print("selectedStatus :: "+selectedStatus);
+        self.view.lblVoucherSts.text = selectedStatus;
         self.view.flxSegStatus.isVisible = false;
+        self.validatefields();
       };
       this.view.CalenderStartDate.onSelection = function(eventId) {
         let day = self.view.CalenderStartDate.day;
         let month = self.view.CalenderStartDate.month;
         let year = self.view.CalenderStartDate.year;
+        day = day < 10 ? "0"+day : day;
+        month = month < 10 ? "0"+month : month;
         startDate = year+"-"+month+"-"+day;
+        self.validatefields();
       };
       this.view.CalenderEndDate.onSelection = function(eventId) {
         let day = self.view.CalenderEndDate.day;
         let month = self.view.CalenderEndDate.month;
         let year = self.view.CalenderEndDate.year;
+        day = day < 10 ? "0"+day : day;
+        month = month < 10 ? "0"+month : month;
         endDate = year+"-"+month+"-"+day;
+        self.validatefields();
       };
+      this.view.txtSearchVoucher.onEndEditing = function() {
+        self.validatefields();
+      };
+    },
+    resetUI : function() {
+      selectedStatus = "";
+      startDate = "";
+      endDate = "";
+      this.view.flxscrollvoucherlist.isVisible = false;
+      this.view.flxSegStatus.isVisible = false;
+      this.view.txtSearchVoucher.text = "";
+      this.view.CalenderStartDate.text = "";
+      this.view.CalenderEndDate.text = "";
+      this.view.lblDownloadMessage.isVisible = false;
+      this.view.lblDownloadMessage.text = "% records are ready to download";
+      this.view.btnDownloadVoucher.isVisible = false;
+      this.view.btnGenerateVoucher.isVisible = true;
+      this.view.btnGenerateVoucher.setEnabled(false);
+      this.view.btnGenerateVoucher.skin = "btn919191GreyBorderWhite";
+      this.view.lblVoucherSts.text = "Voucher Status";
+    },
+    validatefields : function() {
+      var phoneformat = /^\d+$/;
+      var phone = this.view.txtSearchVoucher.text;
+      if(phone.match(phoneformat) && selectedStatus !== "" && startDate !== "" && endDate !== "") {
+        this.view.btnGenerateVoucher.setEnabled(true);
+        this.view.btnGenerateVoucher.skin = "sknbtn2c3d73Rounded18px";
+      }
+    },
+    getVoucherMI : function() {
+      var param = {};
+      param.startdate = startDate;
+      param.enddate = endDate;
+      param.mobile = this.view.txtSearchVoucher.text;
+      param.status = selectedStatus;
+      kony.application.showLoadingScreen("", "Loading", "", "", "", "");
+      var voucherManager = applicationManager.getVoucherManager();
+      voucherManager.getVoucherMIList(param,this.getVoucherMISucess,this.getVoucherMIError);
+    },
+    getVoucherMISucess : function(response) {
+      kony.application.dismissLoadingScreen();
+      kony.print(response);
+      voucherData = response.records;
+      let size = voucherData.length;
+      let content = "% records are ready to download";
+      content = content.replace("%", size);
+      this.view.lblDownloadMessage.text = content;
+      this.view.lblDownloadMessage.isVisible = true;
+      this.view.btnGenerateVoucher.isVisible = false;
+      this.view.btnDownloadVoucher.isVisible = true;
+      this.view.segVoucherData.widgetDataMap = {
+        lblApplicatntId : "applicationID",
+        lblApplicantPhone : "mobile",
+        lblLoanAmount : "loanAmount",
+        lblVoucherNumber : "voucherCode",
+        lblVoucherStatus : "voucherStatus",
+        lblGenerationDate : "createdts",
+        lblExpiryDate : "expiryDate",
+        lblRetailerName : "retailerName",
+        lblUserID : "",
+        lblDateTime : "createdts"
+      };
+      var sectionHeader = {
+        "lblApplicantName": "Applicant Name",
+        "lblApplicatntId": "Applicant Id",
+        "lblApplicantPhone": "Applicant Phone Number",
+        "lblAmount": "Amount",
+        "lblVoucherNo": "Voucher Number",
+        "lblVoucherStatus": "Voucher Status",
+        "lblGenerateDate": "Generation Date",
+        "lblExpiryDate": "Expiry Date",
+        "lblUserId": "Retailer Name",
+        "lbldate": "Retailer Date and Time"
+      };
+      var vdata = [sectionHeader,voucherData];
+      var voucherSectionData = [vdata];
+      this.view.segVoucherData.setData(voucherSectionData);
+      this.view.flxscrollvoucherlist.isVisible = true;
+    },
+    getVoucherMIError : function(error) {
+      kony.application.dismissLoadingScreen();
+      kony.print(error);
+    },
+    downloadVoucherData : function() {
+      if(voucherData.length > 0) {
+        this.view.brwsExcel.evaluateJavaScript("exportJsonToXLSX(" + JSON.stringify(voucherData) + ")");
+      }
     }
   };
 });

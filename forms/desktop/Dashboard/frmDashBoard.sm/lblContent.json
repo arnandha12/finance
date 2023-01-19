@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "sf55750898cc462bb36fb76ec6d8f5eb",
-    "_text_": "Welcome to Mora and Samsung Retail Partner Portal.",
+    "_text_": "Welcome to Mora and % Retail Partner Portal.",
     "_top_": {
         "type": "string",
         "value": "138dp"

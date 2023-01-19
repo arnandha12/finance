@@ -69,6 +69,7 @@
     "enabledforidletimeout": false,
     "friendlyName": "frmLogin",
     "id": "frmLogin",
+    "ide_onDeviceBack": "AS_Form_fcd8b0aa09ea423e9c1e6fd4a2e95883",
     "ide_preShow": "AS_Form_i5477a3403134bbb98b3bb7774892d4e",
     "info": null,
     "initdone": false,

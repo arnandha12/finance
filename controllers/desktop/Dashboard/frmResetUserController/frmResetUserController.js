@@ -1,4 +1,4 @@
-define([],function(){
+define(['ServiceResponse'],function(ServiceResponse){
   let retailerList = [];
   let selecteduser = {};
   return {
@@ -64,7 +64,7 @@ define([],function(){
     },
     getAllUserList: function() {
       let param = {
-        "retailerid": "1"
+        "retailerid": ServiceResponse.USER_ATTRIBUTES.retailerid
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
       var retailerManager = applicationManager.getRetailerManager();

@@ -1,4 +1,4 @@
-define([],function(){ 
+define(['ServiceResponse'],function(ServiceResponse){ 
   let voucherList = [];
   let selectedVoucher = {};
   let securityKey = "",resendtime = 180;
@@ -157,7 +157,7 @@ define([],function(){
     },
     getAllVoucherList: function() {
       let param = {
-        "retailerid":"101608"
+        "retailerid": ServiceResponse.USER_ATTRIBUTES.retailerid
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
       var voucherManager = applicationManager.getVoucherManager();
@@ -165,12 +165,23 @@ define([],function(){
     },
     getListSucess: function(response) {
       kony.application.dismissLoadingScreen();
+      voucherList = response.records;
       this.view.txtSearchVoucher.setEnabled(true);
       this.view.segVouchers.widgetDataMap = {
-        lblUserName: "voucherCode"
+        lblUserName: "vouchercode"
       };
-      this.view.segVouchers.setData(response.records);
-      voucherList = response.records;
+      var voucherFiler = [];
+      for(var voucher = 0, voucherlen = voucherList.length; voucher < voucherlen ; voucher++ ) {
+        var objEmpty = this.isEmpty(voucherList[voucher]);
+        if(!objEmpty) {
+          voucherFiler.push(voucherList[voucher]);
+        }
+      }
+      this.view.segVouchers.setData(voucherFiler);
+      voucherList = JSON.parse(JSON.stringify(voucherFiler));
+    },
+    isEmpty : function(obj) {
+      	return Object.keys(obj).length === 0;
     },
     getListError: function(error) {
       kony.application.dismissLoadingScreen();
@@ -179,7 +190,7 @@ define([],function(){
     },
     getVoucherDetails: function(voucher) {
       let param = {
-        "voucherid": voucher.voucherCode,
+        "voucherid": voucher.vouchercode,
         "code": "CODE"
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
@@ -192,7 +203,7 @@ define([],function(){
     },
     getVoucherError: function(error) {
       kony.application.dismissLoadingScreen();
-      alert(JSON.stringify(error));
+      alert(JSON.stringify(error.dbpErrMsg));
     },
     reedemVoucher: function() {
       let voucherCode = this.view.txtVoucherNumber.text;
@@ -217,7 +228,7 @@ define([],function(){
     },
     requestMFA: function(otpType) {
       let param = {
-        "phoneno": "9876543210"
+        "phoneno": ServiceResponse.USER_ATTRIBUTES.phoneno
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
       var authManager = applicationManager.getAuthManager();

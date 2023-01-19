@@ -16,14 +16,14 @@ define([], function () {
     userRepo.customVerb('getVoucherList', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
       //alert("status"+status+" data "+data+" error "+error);
-      if(data.opstatus === 0){
+      if(data && data.opstatus === 0){
         if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
           failureCallback(data);
         } else {
           successCallback(data);
         }
       } else {
-        failureCallback(data);
+        failureCallback(error);
       }
     } 
     function successCallback(resSucess){
@@ -39,14 +39,14 @@ define([], function () {
     userRepo.customVerb('getVoucherDetails', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
       //alert("status"+status+" data "+data+" error "+error);
-      if(data.opstatus === 0){
+      if(data && data.opstatus === 0){
         if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
           failureCallback(data);
         } else {
           successCallback(data);
         }
       } else {
-        failureCallback(data);
+        failureCallback(error);
       }
     } 
     function successCallback(resSucess){
@@ -62,14 +62,37 @@ define([], function () {
     userRepo.customVerb('redeemVoucher', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
       //alert("status"+status+" data "+data+" error "+error);
-      if(data.opstatus === 0){
+      if(data && data.opstatus === 0){
         if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
           failureCallback(data);
         } else {
           successCallback(data);
         }
       } else {
-        failureCallback(data);
+        failureCallback(error);
+      }
+    } 
+    function successCallback(resSucess){
+      sucessCB(resSucess);
+    }
+    function failureCallback(resError){
+      errorCB(resError);
+    }
+  };
+  VoucherManager.prototype.getVoucherMIList = function(params,sucessCB,errorCB) {
+    var self = this;
+    var userRepo =  kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("voucher");
+    userRepo.customVerb('getVoucherMI', params, serviceCompletionCallback);
+    function serviceCompletionCallback(status, data, error) {
+      //alert("status"+status+" data "+data+" error "+error);
+      if(data && data.opstatus === 0){
+        if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
+          failureCallback(data);
+        } else {
+          successCallback(data);
+        }
+      } else {
+        failureCallback(error);
       }
     } 
     function successCallback(resSucess){

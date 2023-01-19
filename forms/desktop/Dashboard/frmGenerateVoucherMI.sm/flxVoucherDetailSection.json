@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "45%"
+        "value": "50%"
     },
     "_left_": {
         "type": "string",
@@ -36,7 +36,9 @@
     "canUpdateUI": true,
     "children": [
         "lblDownloadMessage",
-        "btnDownloadVoucher"
+        "btnDownloadVoucher",
+        "btnGenerateVoucher",
+        "flxscrollvoucherlist"
     ],
     "clipbounds": false,
     "containerweight": 100,

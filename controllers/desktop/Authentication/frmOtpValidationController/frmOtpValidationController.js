@@ -1,6 +1,14 @@
 define([],function(){ 
-  let securityKey = "", resendtime = 180;
+  let securityKey = "", resendtime = 180,phoneno = "";
   return {
+    onNavigate: function(params) {
+      if(!params) {
+        params = {};
+      }
+      if(params.hasOwnProperty("phoneno")) {
+        this.phoneno = params.phoneno;  
+      }
+    },
     onPreShow: function() {
       var self = this;
       this.view.flxError.isVisible = false;
@@ -31,7 +39,7 @@ define([],function(){
     },
     requestMFA: function(otpType) {
       let param = {
-        "phoneno": "9876543210"
+        "phoneno": this.phoneno
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
       var authManager = applicationManager.getAuthManager();

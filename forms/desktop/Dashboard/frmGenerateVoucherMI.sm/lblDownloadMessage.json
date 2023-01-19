@@ -2,8 +2,8 @@
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "50dp"
     },
     "_margin_": [
         1,
@@ -18,10 +18,14 @@
         0
     ],
     "_skin_": "s5debec91f1e42aa9de46998ef58b32e",
-    "_text_": "%N% records are ready to download",
+    "_text_": "% records are ready to download",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
         "type": "string",
-        "value": "30%"
+        "value": "45%"
     },
     "_wrapping_": 2,
     "android": {
@@ -34,10 +38,6 @@
     "centerx": {
         "type": "string",
         "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "30%"
     },
     "containerweight": 100,
     "contentalignment": 5,

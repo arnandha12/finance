@@ -10,14 +10,31 @@ define([], function () {
   } 
   inheritsFrom(AuthManager, kony.mvc.Business.Delegator); 
   AuthManager.prototype.login = function(params,sucessCB,errorCB) {
+//     var authParams = {
+//       "userid": params.username,
+//       "password": params.password
+//     };
     var authParams = {
-      "userid": params.username,
-      "password": params.password
+      "UserName": params.username,
+      "Password": params.password
     };
-    authClient = KNYMobileFabric.getIdentityService("MoraRetailerRepo");
+    authClient = KNYMobileFabric.getIdentityService("MoraRetailerLogin");
     authClient.login(authParams, successCallback, failureCallback);
-    function successCallback(resSucess){
-      sucessCB(resSucess);
+    function successCallback(){
+      authClient.getUserAttributes(
+        sucessCB.bind(this),
+        errorCB.bind(this)
+      );
+    }
+    function failureCallback(resError){
+      errorCB(resError);
+    }
+  };
+  AuthManager.prototype.logout = function(sucessCB,errorCB) {
+   	authClient = KNYMobileFabric.getIdentityService("MoraRetailerLogin");
+    authClient.logout(successCallback, failureCallback);
+    function successCallback(resSuccess){
+      sucessCB(resSuccess);
     }
     function failureCallback(resError){
       errorCB(resError);

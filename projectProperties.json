@@ -256,8 +256,8 @@
     "camerasettings": "",
     "category": "app",
     "chat": "false",
-    "cloud_account_guid": "54b81c51-50d8-4bbd-9a7b-888d2511c518",
-    "cloud_env_GUID": null,
+    "cloud_account_guid": "74c7b0c8-ad7c-4bd8-abba-449364ee9690",
+    "cloud_env_GUID": "5ae68b1c-691f-43f8-aa68-516e6a2207f1",
     "codeGeneration": "false",
     "contacts": "false",
     "cordovaModified": false,
@@ -271,7 +271,7 @@
     "defaultZIndex": "1",
     "defaultlocalekey": "",
     "defaulttheme": "defaultTheme",
-    "desktopstartupformkey": "f54dbf62718246ffb017d83eaa669e23",
+    "desktopstartupformkey": "fe66dcbc7f554879a1df672d011cee56",
     "desktopwebaligenmentoption": "left",
     "desktopwebbasefontsize": "16",
     "desktopwebfavico": "",
@@ -395,6 +395,12 @@
             "appName": "Murahaba Retailer Portal",
             "baseId": "c45eec66-35d6-4385-9ae6-e84748564ea5",
             "id": "c45eec66-35d6-4385-9ae6-e84748564ea5",
+            "version": "1.0"
+        },
+        "74c7b0c8-ad7c-4bd8-abba-449364ee9690": {
+            "appName": "Murahaba Retailer Portal",
+            "baseId": "2e17690b-d8fb-4380-a221-ee48ec0f5afc",
+            "id": "2e17690b-d8fb-4380-a221-ee48ec0f5afc",
             "version": "1.0"
         }
     },

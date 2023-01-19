@@ -292,7 +292,7 @@ define([], function() {
         return voucher.customVerb('generateVoucher', params, onCompletion);
      };
 
-    //For Operation 'getVoucherMI' with service id 'dbxdb_sp_get_vouchermi4299'
+    //For Operation 'getVoucherMI' with service id 'dbxdb_sp_get_vouchermi4180'
      voucher.getVoucherMI = function(params, onCompletion){
         return voucher.customVerb('getVoucherMI', params, onCompletion);
      };

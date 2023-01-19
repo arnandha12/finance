@@ -20,7 +20,7 @@ define([], function(){
 		return voucherRepository.prototype.customVerb('generateVoucher', params, onCompletion);
 	};
 
-	//For Operation 'getVoucherMI' with service id 'dbxdb_sp_get_vouchermi4299'
+	//For Operation 'getVoucherMI' with service id 'dbxdb_sp_get_vouchermi4180'
 	voucherRepository.prototype.getVoucherMI = function(params, onCompletion){
 		return voucherRepository.prototype.customVerb('getVoucherMI', params, onCompletion);
 	};

@@ -3,7 +3,7 @@
   "type" : "custom",
   "version" : "1.0",
   "metaPreference" : -1,
-  "config" : "{\"custom_idp_url\":\"http://api2.staging.morafinance.com:8443/services/RetailerLoginAPI\",\"provider_params\":{},\"is_mfa_enabled\":false,\"body_params\":{},\"header_params\":[],\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"}}",
+  "config" : "{\"header_params\":[],\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"is_mfa_enabled\":false,\"provider_params\":{},\"body_params\":{},\"custom_idp_url\":\"http://172.18.160.22:8080/services/RetailerLoginAPI\"}",
   "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
   "admissionPolicy" : "no_approval_needed",
   "identityMeta" : {

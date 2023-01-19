@@ -1,4 +1,4 @@
-define([],function(){ 
+define(['ServiceResponse'],function(ServiceResponse){ 
   let retailerList = [];
   let selecteduser = {};
   let selectedRole = "",selectedStatus = "";
@@ -27,6 +27,7 @@ define([],function(){
       };
       this.view.btnMContinue.onClick = function() {
         self.resetUI();
+        self.getAllUserList();
       };
       this.view.txtSearchUser.onTextChange = function(eventId) {
         let searchText = eventId.text;
@@ -114,7 +115,7 @@ define([],function(){
     },
     getAllUserList: function() {
       let param = {
-        "retailerid": "1"
+        "retailerid": ServiceResponse.USER_ATTRIBUTES.retailerid
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
       var retailerManager = applicationManager.getRetailerManager();
@@ -163,8 +164,8 @@ define([],function(){
         modifyUser.role = selectedRole;
         modifyUser.status = selectedStatus;
         //TODO : Change based on login
-        modifyUser.retailerid = "1";
-        modifyUser.retailername = "samsung";
+        modifyUser.retailerid = ServiceResponse.USER_ATTRIBUTES.retailerid;
+        modifyUser.retailername = ServiceResponse.USER_ATTRIBUTES.retailername;
         this.view.btnModifyUser.setEnabled(true);
         this.view.btnModifyUser.skin = "sknbtn2c3d73Rounded18px";
       } else {
