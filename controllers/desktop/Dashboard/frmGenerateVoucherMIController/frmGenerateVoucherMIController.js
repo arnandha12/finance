@@ -1,4 +1,4 @@
-define([],function(){
+define(['ServiceResponse'],function(ServiceResponse){
   let voucherStatus = {"CREATED" : "CREATED",
                        "Redeemed" : "REDEEMED",
                        "Unutilised" : "UNUTILISED",
@@ -58,7 +58,7 @@ define([],function(){
         self.validatefields();
       };
     },
-    resetUI : function() {
+    resetUI: function() {
       selectedStatus = "";
       startDate = "";
       endDate = "";
@@ -74,26 +74,35 @@ define([],function(){
       this.view.btnGenerateVoucher.setEnabled(false);
       this.view.btnGenerateVoucher.skin = "btn919191GreyBorderWhite";
       this.view.lblVoucherSts.text = "Voucher Status";
+      this.view.CalenderStartDate.placeholder = "voucher generate start date";
+      this.view.CalenderStartDate.placeholder = "voucher generate end date";
     },
-    validatefields : function() {
+    validatefields: function() {
       var phoneformat = /^\d+$/;
       var phone = this.view.txtSearchVoucher.text;
       if(phone.match(phoneformat) && selectedStatus !== "" && startDate !== "" && endDate !== "") {
         this.view.btnGenerateVoucher.setEnabled(true);
         this.view.btnGenerateVoucher.skin = "sknbtn2c3d73Rounded18px";
+        if(this.view.flxscrollvoucherlist.isVisible === true) {
+          this.view.btnGenerateVoucher.isVisible = true;
+          this.view.flxscrollvoucherlist.isVisible = false;
+          this.view.lblDownloadMessage.isVisible = false;
+          this.view.btnDownloadVoucher.isVisible = false;
+        }
       }
     },
-    getVoucherMI : function() {
+    getVoucherMI: function() {
       var param = {};
       param.startdate = startDate;
       param.enddate = endDate;
       param.mobile = this.view.txtSearchVoucher.text;
       param.status = selectedStatus;
+      param.retailerid = ServiceResponse.USER_ATTRIBUTES.retailerid;
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
       var voucherManager = applicationManager.getVoucherManager();
       voucherManager.getVoucherMIList(param,this.getVoucherMISucess,this.getVoucherMIError);
     },
-    getVoucherMISucess : function(response) {
+    getVoucherMISucess: function(response) {
       kony.application.dismissLoadingScreen();
       kony.print(response);
       voucherData = response.records;
@@ -105,8 +114,8 @@ define([],function(){
       this.view.btnGenerateVoucher.isVisible = false;
       this.view.btnDownloadVoucher.isVisible = true;
       this.view.segVoucherData.widgetDataMap = {
-        lblApplicatntId : "applicationID",
-        lblApplicantPhone : "mobile",
+        lblApplicatntId:"applicationID",
+        lblApplicantPhone: "mobile",
         lblLoanAmount : "loanAmount",
         lblVoucherNumber : "voucherCode",
         lblVoucherStatus : "voucherStatus",
@@ -133,13 +142,30 @@ define([],function(){
       this.view.segVoucherData.setData(voucherSectionData);
       this.view.flxscrollvoucherlist.isVisible = true;
     },
-    getVoucherMIError : function(error) {
+    getVoucherMIError: function(error) {
       kony.application.dismissLoadingScreen();
       kony.print(error);
     },
-    downloadVoucherData : function() {
+    downloadVoucherData: function() {
       if(voucherData.length > 0) {
-        this.view.brwsExcel.evaluateJavaScript("exportJsonToXLSX(" + JSON.stringify(voucherData) + ")");
+        var excelData = [];
+        var serialNo = 1;
+        for(var i = 0,iLen=voucherData.length; i<iLen;i++) {
+          var data = {};
+          data.serialNo = serialNo;
+          data.ApplicantNumber = voucherData[i].applicationID;
+          data.VoucherCode = voucherData[i].voucherCode;
+          data.GeneratedDate = voucherData[i].createdts;
+          data.ExpiryDate = voucherData[i].expiryDate;
+          data.LoanAmount = voucherData[i].loanAmount;
+          data.Status = voucherData[i].voucherStatus;
+          data.PhoneNo = voucherData[i].mobile;
+          data.T24CustomerId = voucherData[i].Customer_id;
+          data.Tenor = voucherData[i].tenor;
+          excelData.push(data);
+          ++serialNo;
+        }
+        this.view.brwsExcel.evaluateJavaScript("exportJsonToXLSX(" + JSON.stringify(excelData) + ")");
       }
     }
   };

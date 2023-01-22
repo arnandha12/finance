@@ -39,7 +39,8 @@
         "flxVoucherSearch",
         "flxVoucherDetails",
         "flxOTPSection",
-        "flxPopupVoucherNotfound"
+        "flxPopupVoucherNotfound",
+        "flxAcknowledgementPopup"
     ],
     "clipbounds": false,
     "containerweight": 100,

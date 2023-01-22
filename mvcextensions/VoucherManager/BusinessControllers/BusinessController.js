@@ -62,14 +62,14 @@ define([], function () {
     userRepo.customVerb('redeemVoucher', params, serviceCompletionCallback);
     function serviceCompletionCallback(status, data, error) {
       //alert("status"+status+" data "+data+" error "+error);
-      if(data && data.opstatus === 0){
+      if(data){
         if(data.hasOwnProperty("dbpErrCode") || data.hasOwnProperty("dbpErrMsg")) {
           failureCallback(data);
         } else {
           successCallback(data);
         }
       } else {
-        failureCallback(error);
+        failureCallback(data);
       }
     } 
     function successCallback(resSucess){

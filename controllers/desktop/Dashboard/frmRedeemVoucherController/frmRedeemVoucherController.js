@@ -1,5 +1,6 @@
 define(['ServiceResponse'],function(ServiceResponse){ 
   let voucherList = [];
+  let voucherInfo = {};
   let selectedVoucher = {};
   let securityKey = "",resendtime = 180;
   return {
@@ -79,6 +80,7 @@ define(['ServiceResponse'],function(ServiceResponse){
       this.view.btnContinue.onClick = function() {
         self.resetUI();
         self.view.segVouchers.setData(voucherList);
+        self.getAllVoucherList();
       };
       this.view.btnBack.onClick = function() {
         self.view.flxOTPSection.isVisible = false;
@@ -111,21 +113,22 @@ define(['ServiceResponse'],function(ServiceResponse){
     },
     mapUserDetails: function(voucherdetails) {
       let createddate = "";
+      voucherInfo = voucherdetails;
       if(voucherdetails.createdts) {
         createddate = (voucherdetails.createdts).split(" ");
       }
       //this.view.lblVoucherID.text = voucherdetails.voucherCode;
       //this.view.lblGenerateDateValue.text = createddate[0]; 
       //this.view.lblExpiryDateValue.text = "";
-      this.view.txtUApplicantName.text = "";
+      this.view.txtUApplicantName.text = voucherdetails.FullName;
       this.view.txtPhone.text = voucherdetails.mobile;
       this.view.txtVoucherNumber.text = voucherdetails.voucherCode;
       this.view.txtVoucherStatus.text = voucherdetails.voucherStatus;
       //this.view.txtApplicantID.text = voucherdetails.applicationID;
       //this.view.txtApplicantAddress.text = "";
       //this.view.txtMerchnatt24CustId.text = voucherdetails.retailerID;
-      this.view.txtGenerateDate.text = (voucherdetails.createdts).split(" ")[0];
-      this.view.txtExpiryDate.text = "";
+      this.view.txtGenerateDate.text = createddate[0];
+      this.view.txtExpiryDate.text = voucherdetails.expiryDate;
       this.view.txtLoanAmount.text = voucherdetails.offerAmount;
       //this.view.txtEmi.text = voucherdetails.tenorCore;
       //this.view.txtTenor.text = voucherdetails.tenor;
@@ -209,7 +212,7 @@ define(['ServiceResponse'],function(ServiceResponse){
       let voucherCode = this.view.txtVoucherNumber.text;
       let param = {
         "vouchercode": voucherCode,
-        "voucherid": "1",
+        "voucherid": voucherInfo.voucherID,
         "status": "REDEEMED"
       };
       kony.application.showLoadingScreen("", "Loading", "", "", "", "");
@@ -218,11 +221,12 @@ define(['ServiceResponse'],function(ServiceResponse){
     },
     reedemVoucherSucess: function(response) {
       kony.application.dismissLoadingScreen();
+      this.view.flxOTPSection.isVisible = false;
       this.view.flxAcknowledgementPopup.isVisible = true;
+      this.view.lblAcknowledgeMsg.text = "Voucher number "+voucherInfo.voucherCode+" successfully redeemed";
     },
     reedemVoucherError: function(error) {
       kony.application.dismissLoadingScreen();
-      alert(error.dbpErrMsg);
       this.view.flxOTPSection.isVisible = false;
       this.view.flxVoucherDetails.isVisible = true;  
     },
