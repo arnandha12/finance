@@ -30,7 +30,7 @@ define(['ServiceResponse'],function(ServiceResponse){
       };
       this.view.segStatus.onRowClick = function(eventId) {
         kony.print("event :: "+JSON.stringify(eventId.selectedRowItems[0]));
-        selectedStatus = voucherStatus[eventId.selectedRowItems[0].lblUserName];
+        selectedStatus = eventId.selectedRowItems[0].lblUserName;
         kony.print("selectedStatus :: "+selectedStatus);
         self.view.lblVoucherSts.text = selectedStatus;
         self.view.flxSegStatus.isVisible = false;
@@ -80,7 +80,7 @@ define(['ServiceResponse'],function(ServiceResponse){
     validatefields: function() {
       var phoneformat = /^\d+$/;
       var phone = this.view.txtSearchVoucher.text;
-      if(phone.match(phoneformat) && selectedStatus !== "" && startDate !== "" && endDate !== "") {
+      if(phone.match(phoneformat) || selectedStatus !== "" || (startDate !== "" && endDate !== "")) {
         this.view.btnGenerateVoucher.setEnabled(true);
         this.view.btnGenerateVoucher.skin = "sknbtn2c3d73Rounded18px";
         if(this.view.flxscrollvoucherlist.isVisible === true) {

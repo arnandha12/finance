@@ -18,19 +18,68 @@ define(['ServiceResponse'],function(ServiceResponse){
       };
       this.view.txtSearchVoucher.onTextChange = function(eventId) {
         let searchText = eventId.text;
-        if(searchText.length > 1) {
-          let filteredData = voucherList.filter(
-            data => ((data.vouchercode).toLowerCase()).includes(searchText.toLowerCase()));
-          kony.print(filteredData);
-          self.view.segVouchers.setData(filteredData);
-          if(filteredData.length === 0) {
-            self.view.flxSegmentSearchList.isVisible = false;
-            self.view.flxPopupVoucherNotfound.isVisible = true;
-            self.view.txtSearchVoucher.setEnabled(false);
+        var phoneformat = /^\d+$/;
+        if(searchText.match(phoneformat)) {
+          self.view.segVouchers.widgetDataMap = {
+            lblUserName: "mobile"
+          };
+          var voucherFiler = [];
+          for(var voucher = 0, voucherlen = voucherList.length; voucher < voucherlen ; voucher++ ) {
+            var objEmpty = self.isEmpty(voucherList[voucher]);
+            if(!objEmpty) {
+              voucherFiler.push(voucherList[voucher]);
+            }
+          }
+          self.view.segVouchers.setData(voucherFiler);
+          
+          if(searchText.length > 1) {
+            //let filteredData = voucherList.filter(data => ((data.mobile).includes(searchText)));
+            let filteredData = voucherList.filter(function(data){
+             	kony.print("Data :: "+data);
+              	let mobile = data.mobile;
+              	return (mobile.indexOf(searchText) !== -1);
+            });
+            kony.print(filteredData);
+            self.view.segVouchers.setData(filteredData);
+            if(filteredData.length === 0) {
+              self.view.flxSegmentSearchList.isVisible = false;
+              self.view.flxPopupVoucherNotfound.isVisible = true;
+              self.view.txtSearchVoucher.setEnabled(false);
+            }
+          } else {
+            self.view.segVouchers.setData(voucherList);
           }
         } else {
-          self.view.segVouchers.setData(voucherList);
+          self.view.segVouchers.widgetDataMap = {
+            lblUserName: "vouchercode"
+          };
+          var voucherFiler = [];
+          for(var voucher = 0, voucherlen = voucherList.length; voucher < voucherlen ; voucher++ ) {
+            var objEmpty = self.isEmpty(voucherList[voucher]);
+            if(!objEmpty) {
+              voucherFiler.push(voucherList[voucher]);
+            }
+          }
+          self.view.segVouchers.setData(voucherFiler);
+          if(searchText.length > 1) {
+            //let filteredData = voucherList.filter(data => ((data.vouchercode)).includes(searchText));
+            let filteredData = voucherList.filter(function(data){
+             	kony.print("Data :: "+data);
+              	//let vouchercode = data.vouchercode;
+              	return (data.vouchercode && (data.vouchercode).indexOf(searchText) !== -1);
+            });
+            kony.print(filteredData);
+            self.view.segVouchers.setData(filteredData);
+            if(filteredData.length === 0) {
+              self.view.flxSegmentSearchList.isVisible = false;
+              self.view.flxPopupVoucherNotfound.isVisible = true;
+              self.view.txtSearchVoucher.setEnabled(false);
+            }
+          } else {
+            self.view.segVouchers.setData(voucherList);
+          }
         }
+        
       };
       this.view.segVouchers.onRowClick = function(eventId) {
         kony.print(eventId.selectedRowItems[0]);
@@ -112,7 +161,7 @@ define(['ServiceResponse'],function(ServiceResponse){
       //this.tempGtAll();
     },
     mapUserDetails: function(voucherdetails) {
-      let createddate = "";
+      let createddate = [];
       voucherInfo = voucherdetails;
       if(voucherdetails.createdts) {
         createddate = (voucherdetails.createdts).split(" ");
@@ -120,16 +169,16 @@ define(['ServiceResponse'],function(ServiceResponse){
       //this.view.lblVoucherID.text = voucherdetails.voucherCode;
       //this.view.lblGenerateDateValue.text = createddate[0]; 
       //this.view.lblExpiryDateValue.text = "";
-      this.view.txtUApplicantName.text = voucherdetails.FullName;
-      this.view.txtPhone.text = voucherdetails.mobile;
-      this.view.txtVoucherNumber.text = voucherdetails.voucherCode;
-      this.view.txtVoucherStatus.text = voucherdetails.voucherStatus;
+      this.view.txtUApplicantName.text = (voucherdetails.FullName) ? voucherdetails.FullName : "";
+      this.view.txtPhone.text = (voucherdetails.mobile) ? voucherdetails.mobile : "";
+      this.view.txtVoucherNumber.text = (voucherdetails.voucherCode) ? voucherdetails.voucherCode : "";
+      this.view.txtVoucherStatus.text = (voucherdetails.voucherStatus) ? voucherdetails.voucherStatus : "";
       //this.view.txtApplicantID.text = voucherdetails.applicationID;
       //this.view.txtApplicantAddress.text = "";
       //this.view.txtMerchnatt24CustId.text = voucherdetails.retailerID;
       this.view.txtGenerateDate.text = createddate[0];
-      this.view.txtExpiryDate.text = voucherdetails.expiryDate;
-      this.view.txtLoanAmount.text = voucherdetails.offerAmount;
+      this.view.txtExpiryDate.text = (voucherdetails.expiryDate) ? voucherdetails.expiryDate : "";
+      this.view.txtLoanAmount.text = (voucherdetails.offerAmount) ? voucherdetails.offerAmount : "";
       //this.view.txtEmi.text = voucherdetails.tenorCore;
       //this.view.txtTenor.text = voucherdetails.tenor;
 
