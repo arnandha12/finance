@@ -91,7 +91,7 @@ define(['ServiceResponse'],function(ServiceResponse){
       this.view.txtPhoneNumber.text = data.PhoneNo;
       this.view.txtUserId.text = data.UserId;
       this.view.txtRole.text = data.Role;
-      this.view.txtStatus.text = (data.Status === "SID_ACTIVE")?"Active":"Unactive";
+      this.view.txtStatus.text = (data.Status === "SID_ACTIVE")?"Active":"Inactive";
       this.view.txtUsername.setEnabled(false);
       this.view.txtRole.setEnabled(false);
       this.view.txtPhoneNumber.setEnabled(false);

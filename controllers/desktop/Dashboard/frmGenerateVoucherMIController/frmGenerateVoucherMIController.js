@@ -75,7 +75,7 @@ define(['ServiceResponse'],function(ServiceResponse){
       this.view.btnGenerateVoucher.skin = "btn919191GreyBorderWhite";
       this.view.lblVoucherSts.text = "Voucher Status";
       this.view.CalenderStartDate.placeholder = "voucher generate start date";
-      this.view.CalenderStartDate.placeholder = "voucher generate end date";
+      this.view.CalenderEndDate.placeholder = "voucher generate end date";
     },
     validatefields: function() {
       var phoneformat = /^\d+$/;

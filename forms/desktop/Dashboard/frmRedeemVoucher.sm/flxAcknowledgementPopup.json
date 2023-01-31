@@ -54,7 +54,7 @@
     "id": "flxAcknowledgementPopup",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "d37ca21f8be54f38ae03045c6e499990",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
