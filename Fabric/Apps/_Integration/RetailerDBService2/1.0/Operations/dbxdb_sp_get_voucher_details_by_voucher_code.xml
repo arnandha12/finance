@@ -18,7 +18,7 @@
         <config-param api-version="" appid="" name="password" value="Infinity@1234"/>
         <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
         <config-param api-version="" appid="" name="advancedSettings" value=""/>
-        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:mysql://172.18.160.32:3306?characterEncoding=UTF-8"/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:mysql://172.18.32.53:3306?characterEncoding=UTF-8"/>
         <config-param api-version="" appid="" name="jdbcClass" value="com.mysql.jdbc.Driver"/>
         <config-param api-version="" appid="" name="userId" value="infinity"/>
         <config-param api-version="" appid="" name="maxPoolSize" value=""/>
@@ -32,7 +32,7 @@
     </service-config>
     <service-input passthrough="false" isExtended="false">
         <header datatype="" name="" passthrough="false" isExtended="false"/>
-        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="voucherCode" order="" paramOrder="1" parentOrder="-1" passnull="true" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="ABCD" value="" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="voucherCode" order="" paramOrder="1" parentOrder="-1" passnull="true" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="MORA-0JPSWG-WB438" value="" isExtended="false">
             <accessType></accessType>
         </param>
         <template-param datatype="" defaultvalue="" description="" encode="false" format="" formatvalue="" name="criteria" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="" isExtended="false">

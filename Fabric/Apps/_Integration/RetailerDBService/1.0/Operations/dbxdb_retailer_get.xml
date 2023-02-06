@@ -18,7 +18,7 @@
         <config-param api-version="" appid="" name="password" value="Infinity@1234"/>
         <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
         <config-param api-version="" appid="" name="advancedSettings" value=""/>
-        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:mysql://172.18.160.32:3306?characterEncoding=UTF-8"/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:mysql://172.18.32.53:3306?characterEncoding=UTF-8"/>
         <config-param api-version="" appid="" name="jdbcClass" value="com.mysql.jdbc.Driver"/>
         <config-param api-version="" appid="" name="userId" value="infinity"/>
         <config-param api-version="" appid="" name="maxPoolSize" value=""/>
@@ -37,7 +37,7 @@
             <param datatype="string" defaultvalue="" description="" encode="false" format="" formatvalue="" name="$select" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
                 <accessType>readonly</accessType>
             </param>
-            <param datatype="string" defaultvalue="" description="" encode="false" format="" formatvalue="" name="$filter" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Createdts gt 2022-12-07 and Createdts lt 2022-12-17" value="" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="" formatvalue="" name="$filter" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
                 <accessType>readonly</accessType>
             </param>
             <param datatype="string" defaultvalue="" description="" encode="false" format="" formatvalue="" name="$orderby" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">

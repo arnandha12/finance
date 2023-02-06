@@ -15,7 +15,7 @@
         </entry>
         <entry>
             <key>jdbcUrl</key>
-            <value>jdbc:mysql://172.18.160.32:3306?characterEncoding=UTF-8</value>
+            <value>jdbc:mysql://172.18.32.53:3306?characterEncoding=UTF-8</value>
         </entry>
         <entry>
             <key>identityProviderType</key>

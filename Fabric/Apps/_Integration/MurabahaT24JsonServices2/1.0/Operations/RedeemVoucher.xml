@@ -27,7 +27,7 @@
         <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="voucherStatus" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="REDEEMED" value="" isExtended="false">
             <accessType></accessType>
         </param>
-        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="voucherCode" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="MORA-123456-78900" value="" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="voucherCode" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="MORA-IDB565-RB0XE" value="" isExtended="false">
             <accessType></accessType>
         </param>
         <template-param datatype="" defaultvalue="{&#10;    &quot;body&quot;: {&#10;        &quot;voucherStatus&quot;: &quot;$voucherStatus&quot;&#10;    }&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;body&quot;: {&#10;        &quot;voucherStatus&quot;: &quot;$voucherStatus&quot;&#10;    }&#10;}" isExtended="false">

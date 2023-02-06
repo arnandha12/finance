@@ -1,31 +1,31 @@
 {
     "services": [
         {
-            "serviceId": "867c4001-7a7b-4559-b9b0-bd16c2638f46",
+            "serviceId": "40bd4599-b6a9-4a3b-b93a-7b269fe15dd5",
             "serviceName": "RetailerCustomer",
             "serviceETag": "c38d7835-3617-4ec7-b2d7-66e6eb1ba8c9",
             "objects": [
                 {
-                    "objectId": "17379",
+                    "objectId": "13521",
                     "objectName": "Retailer",
-                    "objectETag": "fca1bf29-28f4-4d0c-83af-c3fdd9eb51cd"
+                    "objectETag": "6f278140-0251-4a83-88b2-50c232eaa37f"
                 }
             ]
         },
         {
-            "serviceId": "7e0eeb4d-4123-47db-afad-d62783b7a669",
+            "serviceId": "037d69b7-11aa-4f5e-a9f9-3f5a46e095a8",
             "serviceName": "VoucherObject",
             "serviceETag": "0deb42d5-b2ff-4f4a-ad6d-81e81b9bf80d",
             "objects": [
                 {
-                    "objectId": "17363",
+                    "objectId": "13505",
                     "objectName": "voucher",
-                    "objectETag": "2d5d8f78-ea33-45de-a64d-0ea323d15854"
+                    "objectETag": "5e6a53c4-50d8-4e91-a7f0-5f704de4ff63"
                 }
             ]
         }
     ],
     "appInfo": {
-        "serviceDocEtag": "000001860385BDF0"
+        "serviceDocEtag": "000001861875CDB8"
     }
 }

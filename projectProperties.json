@@ -256,8 +256,8 @@
     "camerasettings": "",
     "category": "app",
     "chat": "false",
-    "cloud_account_guid": "74c7b0c8-ad7c-4bd8-abba-449364ee9690",
-    "cloud_env_GUID": "5ae68b1c-691f-43f8-aa68-516e6a2207f1",
+    "cloud_account_guid": "099f5a0a-88d4-41e2-8141-c5af8ef6ae87",
+    "cloud_env_GUID": "785637e2-cea7-4beb-a816-0bb8e0de14b9",
     "codeGeneration": "false",
     "contacts": "false",
     "cordovaModified": false,
@@ -391,6 +391,12 @@
     "keyStoreFilePath": "",
     "keyStoreFilePathandwear": "",
     "kfAppInfo": {
+        "099f5a0a-88d4-41e2-8141-c5af8ef6ae87": {
+            "appName": "Murahaba Retailer Portal",
+            "baseId": "abb51986-074b-4eb0-9e6b-9d513fc21d7d",
+            "id": "abb51986-074b-4eb0-9e6b-9d513fc21d7d",
+            "version": "1.0"
+        },
         "54b81c51-50d8-4bbd-9a7b-888d2511c518": {
             "appName": "Murahaba Retailer Portal",
             "baseId": "c45eec66-35d6-4385-9ae6-e84748564ea5",

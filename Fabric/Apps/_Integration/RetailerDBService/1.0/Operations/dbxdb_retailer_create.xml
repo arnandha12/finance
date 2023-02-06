@@ -17,7 +17,7 @@
         <config-param api-version="" appid="" name="password" value="Infinity@1234"/>
         <config-param api-version="" appid="" name="http_auth_mode" value="none"/>
         <config-param api-version="" appid="" name="advancedSettings" value=""/>
-        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:mysql://172.18.160.32:3306?characterEncoding=UTF-8"/>
+        <config-param api-version="" appid="" name="jdbcUrl" value="jdbc:mysql://172.18.32.53:3306?characterEncoding=UTF-8"/>
         <config-param api-version="" appid="" name="jdbcClass" value="com.mysql.jdbc.Driver"/>
         <config-param api-version="" appid="" name="userId" value="infinity"/>
         <config-param api-version="" appid="" name="maxPoolSize" value=""/>

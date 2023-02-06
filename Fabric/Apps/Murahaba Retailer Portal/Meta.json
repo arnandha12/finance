@@ -5,27 +5,31 @@
   "intSvcs" : [ {
     "name" : "MurabahaT24JsonServices2",
     "version" : "1.0",
-    "etag" : "cf571806-d43c-4273-b69a-229d5b75eef9"
+    "etag" : "d2c478ab-80eb-4d72-bfa5-122be612c89e"
   }, {
     "name" : "RetailerDBService",
     "version" : "1.0",
-    "etag" : "87fa7c1d-241e-41fc-bacf-c5d909223a0a"
+    "etag" : "9f4512b1-4684-4796-a683-7cf81a743f8a"
   }, {
     "name" : "RetailerDBService2",
     "version" : "1.0",
-    "etag" : "7f92aada-56a4-4e8f-b39c-28529cfe2504"
+    "etag" : "7ea863dc-ce6c-453f-bf5c-2ef707bad0b0"
   }, {
     "name" : "RetailerJavaService",
     "version" : "1.0",
-    "etag" : "4e1e3da4-360b-4492-9f0b-69cce8485f21"
+    "etag" : "4fb65a48-8b93-4621-9497-425b0aab81a9"
   }, {
     "name" : "RetailerJavaService2",
     "version" : "1.0",
-    "etag" : "2bf308a2-dbfc-4274-9bcd-9120dcbf9348"
+    "etag" : "35cc8a31-f1c5-4d68-b2f3-d87a7fa5af81"
   }, {
     "name" : "RetailerLoginAPI",
     "version" : "1.0",
-    "etag" : "7e7a88da-942f-4ce1-82b0-a472da7140f7"
+    "etag" : "985db0b0-18df-4ca5-ad2b-fe7fedb64122"
+  }, {
+    "name" : "UniphonicRestAPIMurabaha",
+    "version" : "1.0",
+    "etag" : "b0b4d212-d3e0-4e20-a423-31077c8733da"
   }, {
     "name" : "VoucherServices",
     "version" : "1.0",
@@ -38,7 +42,7 @@
   }, {
     "name" : "VoucherObject",
     "version" : "1.0",
-    "etag" : "66deb351-373e-450e-80ca-1db6e31a4a8b"
+    "etag" : "0deb42d5-b2ff-4f4a-ad6d-81e81b9bf80d"
   } ],
   "identity" : [ "MoraRetailerLogin", "MoraRetailerRepo" ],
   "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
