@@ -6,94 +6,140 @@
             {
                 "lblAmount": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Amount"
+                    "text": ""
                 },
                 "lblApplicantName": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Applicant Name"
+                    "text": "starting"
                 },
                 "lblApplicantPhone": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Applicant Phone Number"
+                    "text": ""
                 },
                 "lblApplicatntId": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Applicant ID"
+                    "text": ""
                 },
                 "lblExpiryDate": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Expiry Date"
+                    "text": ""
                 },
                 "lblGenerateDate": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Generation Date"
+                    "text": ""
                 },
                 "lblRetailerName": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Retail Partner's name"
+                    "text": ""
                 },
                 "lblUserId": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Redeemed by User Id"
+                    "text": ""
                 },
                 "lblVoucherNo": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Voucher Number"
+                    "text": ""
                 },
                 "lblVoucherStatus": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Voucher Status"
+                    "text": ""
                 },
                 "lbldate": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Date & Time"
+                    "text": "ending"
                 }
             },
             [
                 {
                     "lblApplicantName": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblApplicantPhone": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblApplicatntId": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "11111111222211111"
                     },
                     "lblDateTime": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblExpiryDate": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblGenerationDate": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblLoanAmount": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblRetailerName": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblUserID": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblVoucherNumber": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
                     },
                     "lblVoucherStatus": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "1111111111111"
+                    }
+                },
+                {
+                    "lblApplicantName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblApplicantPhone": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblApplicatntId": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblDateTime": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblExpiryDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblGenerationDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblLoanAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblRetailerName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblUserID": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblVoucherNumber": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
+                    },
+                    "lblVoucherStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "2222"
                     }
                 }
             ]
@@ -101,7 +147,7 @@
     ],
     "_height_": {
         "type": "string",
-        "value": "300dp"
+        "value": "99.00%"
     },
     "_indicator_": "none",
     "_left_": {
@@ -127,12 +173,12 @@
     },
     "_width_": {
         "type": "string",
-        "value": "200%"
+        "value": "100%"
     },
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "00",
+    "counter": "01",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -158,7 +204,8 @@
     "pageoffdotimage": "pageoffdot.png",
     "pageondotimage": "pageondot.png",
     "paginationconfig": {
-        "position": "bottom"
+        "position": "bottom",
+        "vdistance": 1
     },
     "parent": "flxscrollvoucherlist",
     "pf": "frmGenerateVoucherMI",
@@ -166,7 +213,7 @@
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "abcb9618a4854f529604d30b66586930",
-    "rowcounter": 0,
+    "rowcounter": 1,
     "rowfocusskin": "s81bee6c05da4ed2a18adb8f7714d88f",
     "rowskin": "s165322209d54249b4908033abee8525",
     "rowtemplate": "flxSegVoucherList",
@@ -182,10 +229,16 @@
     "selecteditems": null,
     "selectedsectionindex": 0,
     "selectionbehavior": "default",
+    "selectionbehaviorconfig": null,
     "separatorcolor": "aaaaaa00",
     "separatorrequired": true,
     "separatorthickness": 1,
     "showscrollbars": true,
+    "swipeContext": {
+        "currentPage": 0,
+        "imageWidth": 1003,
+        "widthRatio": 0
+    },
     "viewtype": "tableview",
     "vizProps": {},
     "wType": "Segment",

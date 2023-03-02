@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "s5debec91f1e42aa9de46998ef58b32e",
-    "_text_": "We have sent a verification code to the phone number ending in ******989",
+    "_text_": "We have sent a verification code to the phone number ending in %",
     "_top_": {
         "type": "string",
         "value": "90px"

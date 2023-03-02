@@ -15,7 +15,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_bc307870f86e4cf39c878518ff3874e3",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "this.onPreShow();",
+            "codeSnippet": "this.view.lblVoucher.text=\"Voucher MI\"\nthis.onPreShow();",
             "parentId": null
         }]
     }

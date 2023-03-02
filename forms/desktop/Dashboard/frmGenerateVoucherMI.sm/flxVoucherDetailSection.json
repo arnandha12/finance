@@ -6,7 +6,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "7%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -29,11 +29,15 @@
     },
     "_width_": {
         "type": "string",
-        "value": "85%"
+        "value": "96%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "lblDownloadMessage",
         "btnDownloadVoucher",

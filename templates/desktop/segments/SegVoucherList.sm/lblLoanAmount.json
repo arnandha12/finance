@@ -17,12 +17,8 @@
         0,
         0
     ],
-    "_skin_": "s299593209c949019c9b93cbd6c4c874",
+    "_skin_": "s5a9ffda12f84e0791df38510865351f",
     "_text_": "20000",
-    "_top_": {
-        "type": "string",
-        "value": "5dp"
-    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -39,9 +35,13 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lblLoanAmount",
     "info": null,
     "ipad": {

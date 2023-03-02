@@ -3,6 +3,7 @@ define(['ServiceResponse'],function(ServiceResponse) {
 	return {
 		onPreShow: function() {
           var user = ServiceResponse.USER_ATTRIBUTES;
+          this.view.lblVoucher.text = "Voucher MI";
           if((user.role).toLowerCase() !== "admin") {
             this.view.flxCreateNewUser.isVisible = false;
             this.view.flxModifyUser.isVisible = false;

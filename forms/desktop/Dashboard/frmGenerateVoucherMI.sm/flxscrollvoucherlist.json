@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sb8c3e220b474a74a8657d43738dc246",
+    "_skin_": "scd6afaac7bb449d8b0830c6b132b6a7",
     "_top_": {
         "type": "string",
         "value": "80dp"
@@ -36,6 +36,10 @@
     "allowverticalbounce": true,
     "bounces": true,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "segVoucherData"
     ],
@@ -58,7 +62,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "scrolldirection": 1,
+    "scrolldirection": 3,
     "snapgridsize": 10,
     "snaptogrid": true,
     "track": false,

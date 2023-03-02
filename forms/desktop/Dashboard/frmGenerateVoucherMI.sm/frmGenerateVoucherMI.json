@@ -39,7 +39,7 @@
     },
     "breakpointInfo": {
         "b1": {
-            "width": 1366
+            "width": 1400
         },
         "b2": {
             "width": 1024
@@ -61,6 +61,10 @@
             "channel": "desktop",
             "name": "frmGenerateVoucherMIController"
         }
+    },
+    "currentBreakpoint": {
+        "kuid": "b1",
+        "width": 1400
     },
     "currentLocale": "default",
     "desktopweb": {

@@ -28,8 +28,8 @@
         "value": "100px"
     },
     "_width_": {
-        "type": "string",
-        "value": "78%"
+        "type": "ref",
+        "value": "preferred"
     },
     "allboxes": [],
     "autogrowmode": 0,

@@ -15,6 +15,7 @@ define(['ServiceResponse'],function(ServiceResponse){
       startDate = "";
       endDate = "";
       this.resetUI();
+      this.view.leftpane.lblVoucher.text = "Voucher MI";
       this.view.btnGenerateVoucher.onClick = function() {
         self.getVoucherMI();
       };
@@ -114,21 +115,63 @@ define(['ServiceResponse'],function(ServiceResponse){
       this.view.btnGenerateVoucher.isVisible = false;
       this.view.btnDownloadVoucher.isVisible = true;
       this.view.segVoucherData.widgetDataMap = {
-        lblApplicatntId:"applicationID",
-        lblApplicantPhone: "mobile",
-        lblLoanAmount : "loanAmount",
-        lblVoucherNumber : "voucherCode",
-        lblVoucherStatus : "voucherStatus",
-        lblGenerationDate : "createdts",
-        lblExpiryDate : "expiryDate",
-        lblRetailerName : "retailerName",
-        lblUserID : "",
-        lblDateTime : "createdts"
+        // lblApplicatntId:"applicationID",
+        // lblApplicantPhone: "mobile",
+        // lblLoanAmount : "loanAmount",
+        // lblVoucherNumber : "voucherCode",
+        // lblVoucherStatus : "voucherStatus",
+        // lblGenerationDate : "createdts",
+        // lblExpiryDate : "expiryDate",
+        // lblRetailerName : "retailerName",
+        // lblUserID : "",
+        // lblDateTime : "createdts"
+
+        lblApplicatntId:"lblApplicatntId",
+        lblApplicantPhone:"lblApplicantPhone",
+        lblLoanAmount:"lblLoanAmount",
+        lblVoucherNumber:"lblVoucherNumber",
+        lblVoucherStatus:"lblVoucherStatus",
+        lblGenerationDate:"lblGenerationDate",
+        lblExpiryDate:"lblExpiryDate",
+        lblRetailerName:"lblRetailerName",
+        lblUserID:"lblUserID",
+        lblDateTime:"lblDateTime"
       };
+
+      var appDataPush = [];
+
+      for(var i=0;i<voucherData.length;i++){
+        var createdDate = voucherData[i].createdts;
+        if(voucherData[i].expiryDate !== undefined){
+          var expDate = voucherData[i].expiryDate;
+          var expireSlice = expDate.slice(0,10);
+        }else {
+          var expireSlice ="";
+        }
+        var gendate = createdDate.slice(0,10);
+
+        var segdatas = {
+          "lblApplicatntId":voucherData[i].applicationID,
+          "lblApplicantPhone":voucherData[i].mobile,
+          "lblLoanAmount" : voucherData[i].loanAmount,
+          "lblVoucherNumber" :voucherData[i].voucherCode,
+          "lblVoucherStatus" : voucherData[i].voucherStatus,
+          "lblGenerationDate" : gendate,
+          "lblExpiryDate" : expireSlice,
+          "lblRetailerName" : voucherData[i].retailerName,
+          "lblUserID" :  voucherData[i].retailerID,
+          "lblDateTime" : gendate,
+        };
+      appDataPush.push(segdatas);
+      }
+
+   //  this.view.segVoucherData.setData(segdatas);
+
+
       var sectionHeader = {
         "lblApplicantName": "Applicant Name",
         "lblApplicatntId": "Applicant Id",
-        "lblApplicantPhone": "Applicant Phone Number",
+        "lblApplicantPhone": "Phone Number",
         "lblAmount": "Amount",
         "lblVoucherNo": "Voucher Number",
         "lblVoucherStatus": "Voucher Status",
@@ -137,7 +180,7 @@ define(['ServiceResponse'],function(ServiceResponse){
         "lblUserId": "Retailer Name",
         "lbldate": "Retailer Date and Time"
       };
-      var vdata = [sectionHeader,voucherData];
+      var vdata = [sectionHeader,appDataPush];
       var voucherSectionData = [vdata];
       this.view.segVoucherData.setData(voucherSectionData);
       this.view.flxscrollvoucherlist.isVisible = true;

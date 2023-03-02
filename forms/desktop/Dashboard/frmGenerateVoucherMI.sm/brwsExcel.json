@@ -3,11 +3,11 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "10dp"
+        "value": "220dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0"
     },
     "_margin_": [
         0,
@@ -23,9 +23,9 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0"
     },
-    "_type_": 5,
+    "_type_": 3,
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -40,9 +40,8 @@
     "id": "brwsExcel",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
-    "kuid": "id6184803bc64d19ba37598e1dc956f8",
-    "localurl": "w2c5c3d969ad4befb02f49c581f9ab2e",
+    "isvisible": false,
+    "kuid": "ffc479b14d5a477489a1c7c1b516d569",
     "margininpixel": false,
     "method": "get",
     "name": "kony.ui.Browser",
@@ -57,6 +56,5 @@
     "retainflexpositionproperties": false,
     "screenlevelwidget": false,
     "url": "",
-    "wType": "Browser",
-    "zindex": 1
+    "wType": "Browser"
 }

@@ -70,7 +70,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,
-    "snapgridsize": 10,
+    "snapgridsize": "10",
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1

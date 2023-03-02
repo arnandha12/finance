@@ -17,12 +17,8 @@
         0,
         0
     ],
-    "_skin_": "s6405fcbcb2a4f2d875cd62989073e58",
-    "_text_": "Applicant Phone Number",
-    "_top_": {
-        "type": "string",
-        "value": "5dp"
-    },
+    "_skin_": "sa532f94e177403ba621f66c9b4a8b47",
+    "_text_": "Phone Number",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -39,9 +35,13 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lblApplicantPhone",
     "info": null,
     "ipad": {

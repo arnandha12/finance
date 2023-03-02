@@ -227,7 +227,8 @@
                 "kuid": "ba97552e1e6547a787d88bd6570642b2",
                 "srcKUID": "f9cb9a1572e044e38794fef043d77e3f",
                 "wType": "Label"
-            }
+            },
+            "text": "Voucher MI"
         },
         "leftpane": {
             "__events__": {},
